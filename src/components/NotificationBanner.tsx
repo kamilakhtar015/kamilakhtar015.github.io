@@ -1,13 +1,24 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { X } from 'lucide-react';
 
 export const NotificationBanner = () => {
   const [isVisible, setIsVisible] = useState(true);
+  const [isScrolled, setIsScrolled] = useState(false);
 
-  if (!isVisible) return null;
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollPosition = window.scrollY;
+      setIsScrolled(scrollPosition > 100);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  if (!isVisible || isScrolled) return null;
 
   return (
-    <div className="bg-gradient-to-r from-slate-600 to-slate-700 text-white py-3 px-4 relative">
+    <div className="fixed top-0 left-0 right-0 z-50 bg-black/40 backdrop-blur-sm text-white py-3 px-4">
       <div className="container mx-auto text-center">
         <p className="text-sm md:text-base">
           Hi there, thanks for visiting my website! I'd love to{' '}
