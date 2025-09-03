@@ -15,6 +15,10 @@ export const HeroSection = () => {
       }}
     >
       <div className="container mx-auto px-4 z-10">
+        {/* Location text overlay */}
+        <div className="absolute top-8 left-8 text-white/70 text-sm font-light tracking-wider">
+          Gupis Valley (Gilgit-Baltistan)
+        </div>
         <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 tracking-tight">
           Kamil Akhtar
         </h1>
