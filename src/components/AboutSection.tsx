@@ -9,12 +9,12 @@ export const AboutSection = () => {
   ];
 
   return (
-    <section id="about" className="py-20 bg-slate-900 text-white">
+    <section id="about" className="py-20 bg-slate-800/95 text-white" style={{backgroundColor: 'hsl(210 20% 15%)'}}>
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-3 gap-12 items-start">
           <div className="flex justify-center md:justify-start">
             <div className="w-48 h-48 rounded-full bg-gradient-to-br from-accent/30 to-primary/30 flex items-center justify-center border-2 border-white/10">
-              <div className="w-44 h-44 rounded-full bg-slate-800 flex items-center justify-center text-6xl font-bold text-white">
+              <div className="w-44 h-44 rounded-full flex items-center justify-center text-6xl font-bold text-white" style={{backgroundColor: 'hsl(210 25% 20%)'}}>
                 KA
               </div>
             </div>
@@ -40,8 +40,8 @@ export const AboutSection = () => {
                 {skills.map((skill) => (
                   <div 
                     key={skill}
-                    className="flex items-center space-x-2 p-3 bg-slate-800 rounded-lg border border-white/10 hover:bg-slate-700 transition-smooth"
-                  >
+                    className="flex items-center space-x-2 p-3 rounded-lg border transition-smooth" 
+                    style={{backgroundColor: 'hsl(210 25% 20%)', borderColor: 'hsl(210 15% 30%)'}}>
                     <div className="w-2 h-2 bg-accent rounded-full"></div>
                     <span className="text-gray-200 font-medium">{skill}</span>
                   </div>
