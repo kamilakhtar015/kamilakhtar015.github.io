@@ -26,13 +26,13 @@ export const HeroSection = () => {
           Data Analyst | Software Engineer | Founder
         </p>
         <p className="text-lg text-white/80 mb-8 max-w-2xl mx-auto leading-relaxed">
-          I enjoy creating web applications, exploring new technologies, and contributing to open-source projects.
+          Background PC: Animated Version pic of my village (Gupis) — Where majestic peaks meet endless possibilities, and every pixel tells a story of innovation rooted in nature's grandeur.
         </p>
         
 
         <div className="flex justify-center space-x-6 mb-16">
           <a 
-            href="https://github.com" 
+            href="https://github.com/kamilakhtar015" 
             target="_blank" 
             rel="noopener noreferrer"
             className="text-white/80 hover:text-accent transition-smooth"
@@ -40,7 +40,7 @@ export const HeroSection = () => {
             <Github size={24} />
           </a>
           <a 
-            href="https://linkedin.com" 
+            href="https://www.linkedin.com/in/kamil-akhtar" 
             target="_blank" 
             rel="noopener noreferrer"
             className="text-white/80 hover:text-accent transition-smooth"
@@ -48,7 +48,7 @@ export const HeroSection = () => {
             <Linkedin size={24} />
           </a>
           <a 
-            href="mailto:contact@example.com"
+            href="mailto:kamil.akhtar015@gmail.com"
             className="text-white/80 hover:text-accent transition-smooth"
           >
             <Mail size={24} />

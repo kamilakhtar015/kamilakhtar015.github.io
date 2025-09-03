@@ -18,7 +18,7 @@ export const NotificationBanner = () => {
   if (!isVisible || isScrolled) return null;
 
   return (
-    <div className="fixed top-16 left-0 right-0 z-[60] text-white py-3 px-4">
+    <div className="fixed top-24 left-0 right-0 z-[60] text-white py-3 px-4">
       <div className="container mx-auto text-center">
         <p className="text-sm md:text-base">
           Hi there, thanks for visiting my website! I'd love to{' '}
