@@ -43,12 +43,6 @@ export const StatisticsSection = () => {
   return (
     <section id="statistics" className="py-20 bg-cyan-500 text-white">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">Statistics</h2>
-          <p className="text-cyan-100 text-lg max-w-2xl mx-auto">
-            Numbers that reflect my journey and passion for technology.
-          </p>
-        </div>
 
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8">
           {stats.map((stat, index) => {
