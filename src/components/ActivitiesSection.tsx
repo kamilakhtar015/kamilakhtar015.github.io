@@ -58,21 +58,11 @@ export const ActivitiesSection = () => {
       className="py-20 text-white relative overflow-hidden"
       style={{
         background: `
-          linear-gradient(45deg, 
-            hsl(210 20% 12%) 25%, 
-            transparent 25%, 
-            transparent 75%, 
-            hsl(210 20% 12%) 75%
-          ),
-          linear-gradient(-45deg, 
-            hsl(210 20% 12%) 25%, 
-            transparent 25%, 
-            transparent 75%, 
-            hsl(210 20% 12%) 75%
-          ),
-          hsl(210 20% 15%)
-        `,
-        backgroundSize: '40px 40px'
+          radial-gradient(ellipse 80% 50% at 20% -20%, hsl(210 20% 25%) 0%, transparent 50%),
+          radial-gradient(ellipse 80% 50% at 80% 120%, hsl(210 20% 20%) 0%, transparent 50%),
+          radial-gradient(ellipse 60% 40% at 40% 40%, hsl(210 20% 18%) 0%, transparent 50%),
+          linear-gradient(135deg, hsl(210 20% 12%) 0%, hsl(210 20% 15%) 100%)
+        `
       }}
     >
       <div className="container mx-auto px-4">
