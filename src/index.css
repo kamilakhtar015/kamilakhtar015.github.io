@@ -26,7 +26,7 @@ All colors MUST be HSL.
     --muted: 210 40% 96%;
     --muted-foreground: 215 16% 47%;
 
-    --accent: 24 95% 53%;
+    --accent: 39 100% 50%;
     --accent-foreground: 0 0% 98%;
 
     --destructive: 0 84% 60%;
@@ -34,12 +34,12 @@ All colors MUST be HSL.
 
     --border: 214 32% 91%;
     --input: 214 32% 91%;
-    --ring: 24 95% 53%;
+    --ring: 39 100% 50%;
 
-    /* Portfolio specific colors */
-    --nav-background: 217 33% 19%;
+    /* Portfolio specific colors - Gilgit-Baltistan inspired */
+    --nav-background: 201 32% 26%;
     --nav-foreground: 0 0% 98%;
-    --hero-gradient: linear-gradient(135deg, hsl(217 33% 17% / 0.8), hsl(217 33% 25% / 0.6));
+    --hero-gradient: linear-gradient(135deg, hsl(168 76% 36% / 0.7), hsl(39 100% 50% / 0.6));
     --section-background: 0 0% 99%;
     
     /* Shadows and effects */

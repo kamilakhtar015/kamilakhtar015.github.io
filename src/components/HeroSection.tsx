@@ -1,15 +1,7 @@
 import { ChevronDown, Github, Linkedin, Mail } from 'lucide-react';
-import { Button } from '@/components/ui/button';
-import heroImage from '@/assets/hero-mountains.jpg';
+import heroImage from '@/assets/gilgit-baltistan-hero.jpg';
 
 export const HeroSection = () => {
-  const scrollToProjects = () => {
-    document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' });
-  };
-
-  const scrollToResume = () => {
-    document.getElementById('resume')?.scrollIntoView({ behavior: 'smooth' });
-  };
 
   return (
     <section 
@@ -24,7 +16,7 @@ export const HeroSection = () => {
     >
       <div className="container mx-auto px-4 z-10">
         <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 tracking-tight">
-          Sunwoo Kang
+          Kamil Akhtar
         </h1>
         <p className="text-xl md:text-2xl text-white/90 mb-4 font-light">
           Data Analyst | Software Engineer | Founder
@@ -33,23 +25,6 @@ export const HeroSection = () => {
           I enjoy creating web applications, exploring new technologies, and contributing to open-source projects.
         </p>
         
-        <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-          <Button 
-            onClick={scrollToProjects}
-            size="lg"
-            className="bg-accent hover:bg-accent/90 text-accent-foreground font-semibold px-8 py-3 transition-bounce"
-          >
-            View Projects
-          </Button>
-          <Button 
-            onClick={scrollToResume}
-            variant="outline"
-            size="lg"
-            className="border-white/30 text-white hover:bg-white/10 font-semibold px-8 py-3 transition-bounce"
-          >
-            Download Resume
-          </Button>
-        </div>
 
         <div className="flex justify-center space-x-6 mb-16">
           <a 
