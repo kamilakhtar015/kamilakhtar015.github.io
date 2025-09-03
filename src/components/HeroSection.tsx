@@ -26,7 +26,7 @@ export const HeroSection = () => {
           Data Analyst | Software Engineer | Founder
         </p>
         <p className="text-lg text-white/80 mb-8 max-w-2xl mx-auto leading-relaxed">
-          Background PC: Animated Version pic of my village (Gupis) — Where majestic peaks meet endless possibilities, and every pixel tells a story of innovation rooted in nature's grandeur.
+          Background PC: Animated glimpse of my village, Gupis.
         </p>
         
 
