@@ -60,7 +60,7 @@ export const ContactSection = () => {
             </div>
             <h3 className="text-orange-500 text-lg font-bold mb-4">Let's Connect</h3>
             <p className="text-gray-300 leading-relaxed">
-              <a href="https://www.linkedin.com/in/kamil-akhtar" target="_blank" rel="noopener noreferrer" className="hover:text-cyan-400 transition-colors">
+              <a href="https://www.linkedin.com/in/kamil-akhtar/" target="_blank" rel="noopener noreferrer" className="hover:text-cyan-400 transition-colors">
                 LinkedIn Profile
               </a>
             </p>

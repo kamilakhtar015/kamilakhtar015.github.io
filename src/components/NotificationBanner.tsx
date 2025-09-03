@@ -23,7 +23,7 @@ export const NotificationBanner = () => {
         <p className="text-sm md:text-base">
           Hi there, thanks for visiting my website! I'd love to{' '}
           <a 
-            href="https://www.linkedin.com/in/kamil-akhtar"
+            href="https://www.linkedin.com/in/kamil-akhtar/"
             target="_blank"
             rel="noopener noreferrer"
             className="text-cyan-300 hover:text-cyan-200 underline transition-colors"

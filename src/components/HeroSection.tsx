@@ -40,7 +40,7 @@ export const HeroSection = () => {
             <Github size={24} />
           </a>
           <a 
-            href="https://www.linkedin.com/in/kamil-akhtar" 
+            href="https://www.linkedin.com/in/kamil-akhtar/"
             target="_blank" 
             rel="noopener noreferrer"
             className="text-white/80 hover:text-accent transition-smooth"
