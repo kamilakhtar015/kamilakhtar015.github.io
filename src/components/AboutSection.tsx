@@ -39,8 +39,8 @@ export const AboutSection = () => {
               <div>
                 <h3 className="text-xl font-bold text-white mb-6 tracking-wider uppercase">Profile</h3>
                 <div className="space-y-4">
-                  <p className="text-gray-300 leading-relaxed mb-4">
-                    Currently I have experience in software engineering and data analysis. If 
+                  <p className="text-gray-300 leading-relaxed mb-4 font-playfair">
+                    Currently, I am conducting research in neuroimaging and image harmonization, while actively seeking exciting opportunities and internships to apply and expand my skills. If 
                     you think I'm a good fit, please contact me via
                   </p>
                   <div className="text-cyan-400">
