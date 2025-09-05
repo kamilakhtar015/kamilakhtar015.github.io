@@ -1,5 +1,3 @@
-import profileImage from '@/assets/kamil-profile.png';
-
 export const AboutSection = () => {
   const skills = [
     { name: 'Python & Data Analysis', level: 90 },
@@ -21,12 +19,10 @@ export const AboutSection = () => {
         <div className="grid md:grid-cols-12 gap-12 items-start">
           {/* Profile Image */}
           <div className="md:col-span-3 flex justify-center">
-            <div className="w-48 h-48 rounded-full bg-gradient-to-br from-accent/30 to-primary/30 flex items-center justify-center border-4 border-orange-500/30 overflow-hidden">
-              <img 
-                src={profileImage} 
-                alt="Kamil Akhtar - Professional headshot in Chicago"
-                className="w-44 h-44 rounded-full object-cover object-center"
-              />
+            <div className="w-48 h-48 rounded-full bg-gradient-to-br from-accent/30 to-primary/30 flex items-center justify-center border-4 border-orange-500/30">
+              <div className="w-44 h-44 rounded-full flex items-center justify-center text-6xl font-bold text-white" style={{backgroundColor: 'hsl(210 25% 20%)'}}>
+                KA
+              </div>
             </div>
           </div>
 
