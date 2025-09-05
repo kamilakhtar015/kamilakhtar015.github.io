@@ -28,15 +28,15 @@ const experiences = [
 const education = [
   {
     degree: 'Master of Science in Computer Science',
-    institution: 'Stanford University',
-    period: '2018 - 2020',
-    description: 'Specialized in Machine Learning and Data Science. Thesis on predictive analytics in financial markets.'
+    institution: 'Georgia State University',
+    period: '2025 - 2026',
+    description: 'Specialized in Machine Learning, Deep Learning and neuroimaging. Ongoing project on brain disease classification with advanced feature extraction through ICA and functional connectivities.'
   },
   {
-    degree: 'Bachelor of Science in Software Engineering',
-    institution: 'UC Berkeley',
-    period: '2014 - 2018',
-    description: 'Graduated Magna Cum Laude. Active in computer science club and hackathons.'
+    degree: 'Bachelor of Science in Computer Science',
+    institution: 'Institute of Business Administration Karachi',
+    period: '2020 - 2024',
+    description: 'Graduated with Dean\'s Honor List and capstone project with Indus Hospital on pneumonia classification.'
   }
 ];
 
