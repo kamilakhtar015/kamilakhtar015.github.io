@@ -70,18 +70,23 @@ export const AboutSection = () => {
                     I thrive as both an independent contributor and a collaborative team player, with a solid foundation in research and coding. My expertise spans computer science, and Neuroimaging, where I enjoy solving complex problems at the intersection of technology and life sciences. Below are key highlights of my technical skills.
                   </p>
                   
-                  <div className="space-y-4">
+                  <div className="space-y-6">
                     {skills.map((skill) => (
-                      <div key={skill.name}>
+                      <div key={skill.name} className="relative">
                         <div className="flex justify-between items-center mb-2">
-                          <span className="text-gray-300 text-sm uppercase tracking-wider">{skill.name}</span>
-                          <span className="text-gray-300 text-sm">{skill.level}%</span>
+                          <span className="text-gray-300 text-sm font-medium tracking-wider uppercase">{skill.name}</span>
                         </div>
-                        <div className="w-full bg-gray-700 h-2 rounded-full">
-                          <div 
-                            className="bg-gradient-to-r from-cyan-500 to-cyan-400 h-2 rounded-full transition-all duration-1000 ease-out"
-                            style={{ width: `${skill.level}%` }}
-                          ></div>
+                        <div className="relative">
+                          <div className="w-full bg-gray-700/50 h-2 rounded-sm">
+                            <div 
+                              className="bg-gray-500 h-2 rounded-sm transition-all duration-1000 ease-out relative"
+                              style={{ width: `${skill.level}%` }}
+                            >
+                              <span className="absolute -top-8 right-0 text-gray-300 text-sm font-medium bg-gray-800 px-2 py-1 rounded text-center min-w-[45px]">
+                                {skill.level}%
+                              </span>
+                            </div>
+                          </div>
                         </div>
                       </div>
                     ))}
