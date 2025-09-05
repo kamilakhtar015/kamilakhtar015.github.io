@@ -66,11 +66,8 @@ export const AboutSection = () => {
               <div>
                 <h3 className="text-xl font-bold text-white mb-6 tracking-wider uppercase">Skills</h3>
                 <div className="space-y-1">
-                  <p className="text-gray-300 leading-relaxed mb-6">
-                    I'm a self-like independent teamworker, strong in 
-                    research and coding. My areas of expertise are 
-                    computer science, data analysis, and web development. Below 
-                    are highlights of my technical skills:
+                  <p className="text-gray-300 leading-relaxed mb-6 font-playfair">
+                    I thrive as both an independent contributor and a collaborative team player, with a solid foundation in research and coding. My expertise spans computer science, and Neuroimaging, where I enjoy solving complex problems at the intersection of technology and life sciences. Below are key highlights of my technical skills.
                   </p>
                   
                   <div className="space-y-4">
