@@ -13,7 +13,7 @@ export const AboutSection = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-orange-500 text-lg font-semibold mb-4 tracking-wider uppercase">About</h2>
-          <h1 className="text-4xl md:text-5xl font-bold text-white mb-12">Let me introduce myself.</h1>
+          <h1 className="text-4xl md:text-5xl font-playfair font-bold text-white mb-12">Let me introduce myself.</h1>
         </div>
 
         <div className="grid md:grid-cols-12 gap-12 items-start">
@@ -29,11 +29,8 @@ export const AboutSection = () => {
           {/* Main Content */}
           <div className="md:col-span-9">
             <div className="mb-8">
-              <p className="text-gray-300 leading-relaxed text-lg mb-6">
-                I'm a passionate software engineer seeking opportunities in the tech sector. I'm also 
-                a Computer Science graduate with specialization in data analysis and web development. 
-                My primary interests have been precision software, data flow, efficient algorithms, and the list 
-                is still growing.
+              <p className="text-gray-300 leading-relaxed text-lg mb-6 font-playfair">
+                I'm a Master's student in Computer Science at Georgia State University (Class of 2026) with a background from the Institute of Business Administration, Karachi. My interests bridge industry and research—pursuing roles in data engineering, data analysis, and machine learning, while also applying ML and deep learning to health sciences, neuroscience, and neuroimaging.
               </p>
             </div>
 
