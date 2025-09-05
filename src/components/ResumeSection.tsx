@@ -67,56 +67,56 @@ export const ResumeSection = () => {
           <p className="text-muted-foreground mb-6">My professional journey and educational background</p>
         </div>
 
-        <div className="space-y-16">
-          {/* Industry Experience */}
+        <div className="grid lg:grid-cols-2 gap-12">
+          {/* Work Experience Column */}
           <div>
             <h3 className="text-2xl font-bold text-foreground mb-8 flex items-center">
               <div className="w-1 h-8 bg-accent mr-4"></div>
-              Industry Experience
+              Work Experience
             </h3>
             
-            <div className="space-y-8">
-              {industryExperiences.map((exp, index) => (
-                <div key={index} className="relative pl-8 pb-8 border-l-2 border-muted last:border-l-0">
-                  <div className="absolute -left-2 top-0 w-4 h-4 bg-accent rounded-full"></div>
-                  <div className="bg-card p-6 rounded-lg shadow-card hover:shadow-elegant transition-smooth">
-                    <h4 className="text-xl font-semibold text-card-foreground mb-2">{exp.role}</h4>
-                    <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-3">
-                      <span className="text-accent font-medium">{exp.company}</span>
-                      <span className="text-sm text-muted-foreground">{exp.period}</span>
+            {/* Industry Experience */}
+            <div className="mb-12">
+              <h4 className="text-xl font-semibold text-accent mb-6">Industry Experience</h4>
+              <div className="space-y-8">
+                {industryExperiences.map((exp, index) => (
+                  <div key={index} className="relative pl-8 pb-8 border-l-2 border-muted last:border-l-0">
+                    <div className="absolute -left-2 top-0 w-4 h-4 bg-accent rounded-full"></div>
+                    <div className="bg-card p-6 rounded-lg shadow-card hover:shadow-elegant transition-smooth">
+                      <h5 className="text-lg font-semibold text-card-foreground mb-2">{exp.role}</h5>
+                      <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-3">
+                        <span className="text-accent font-medium">{exp.company}</span>
+                        <span className="text-sm text-muted-foreground">{exp.period}</span>
+                      </div>
+                      <p className="text-muted-foreground">{exp.description}</p>
                     </div>
-                    <p className="text-muted-foreground">{exp.description}</p>
                   </div>
-                </div>
-              ))}
+                ))}
+              </div>
+            </div>
+
+            {/* Research Experience */}
+            <div>
+              <h4 className="text-xl font-semibold text-accent mb-6">Research Experience</h4>
+              <div className="space-y-8">
+                {researchExperiences.map((exp, index) => (
+                  <div key={index} className="relative pl-8 pb-8 border-l-2 border-muted last:border-l-0">
+                    <div className="absolute -left-2 top-0 w-4 h-4 bg-accent rounded-full"></div>
+                    <div className="bg-card p-6 rounded-lg shadow-card hover:shadow-elegant transition-smooth">
+                      <h5 className="text-lg font-semibold text-card-foreground mb-2">{exp.role}</h5>
+                      <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-3">
+                        <span className="text-accent font-medium">{exp.company}</span>
+                        <span className="text-sm text-muted-foreground">{exp.period}</span>
+                      </div>
+                      <p className="text-muted-foreground">{exp.description}</p>
+                    </div>
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
 
-          {/* Research Experience */}
-          <div>
-            <h3 className="text-2xl font-bold text-foreground mb-8 flex items-center">
-              <div className="w-1 h-8 bg-accent mr-4"></div>
-              Research Experience
-            </h3>
-            
-            <div className="space-y-8">
-              {researchExperiences.map((exp, index) => (
-                <div key={index} className="relative pl-8 pb-8 border-l-2 border-muted last:border-l-0">
-                  <div className="absolute -left-2 top-0 w-4 h-4 bg-accent rounded-full"></div>
-                  <div className="bg-card p-6 rounded-lg shadow-card hover:shadow-elegant transition-smooth">
-                    <h4 className="text-xl font-semibold text-card-foreground mb-2">{exp.role}</h4>
-                    <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-3">
-                      <span className="text-accent font-medium">{exp.company}</span>
-                      <span className="text-sm text-muted-foreground">{exp.period}</span>
-                    </div>
-                    <p className="text-muted-foreground">{exp.description}</p>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-
-          {/* Education */}
+          {/* Education Column */}
           <div>
             <h3 className="text-2xl font-bold text-foreground mb-8 flex items-center">
               <div className="w-1 h-8 bg-accent mr-4"></div>
