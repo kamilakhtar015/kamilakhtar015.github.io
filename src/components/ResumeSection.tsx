@@ -47,14 +47,6 @@ export const ResumeSection = () => {
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold text-foreground mb-4">Resume</h2>
           <p className="text-muted-foreground mb-6">My professional journey and educational background</p>
-          <Button 
-            variant="outline" 
-            size="lg"
-            className="border-accent text-accent hover:bg-accent hover:text-accent-foreground transition-smooth"
-          >
-            <Download size={20} className="mr-2" />
-            Download Resume (PDF)
-          </Button>
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12">
