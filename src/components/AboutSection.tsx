@@ -1,11 +1,11 @@
 export const AboutSection = () => {
   const skills = [
-    { name: 'JavaScript & TypeScript', level: 85 },
-    { name: 'React & Next.js', level: 80 },
     { name: 'Python & Data Analysis', level: 90 },
-    { name: 'Node.js & APIs', level: 75 },
-    { name: 'Git & Version Control', level: 85 },
-    { name: 'Database Design', level: 70 }
+    { name: 'Machine & Deep Learning', level: 80 },
+    { name: 'Research', level: 70 },
+    { name: 'SQL', level: 70 },
+    { name: 'Database Design', level: 70 },
+    { name: 'Java', level: 60 }
   ];
 
   return (
