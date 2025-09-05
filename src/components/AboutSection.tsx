@@ -92,7 +92,10 @@ export const AboutSection = () => {
 
             {/* Action Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 mt-12 justify-center md:justify-start">
-              <button className="bg-cyan-500 hover:bg-cyan-600 text-white font-semibold px-8 py-3 rounded transition-colors">
+              <button 
+                onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
+                className="bg-cyan-500 hover:bg-cyan-600 text-white font-semibold px-8 py-3 rounded transition-colors"
+              >
                 Hire Me
               </button>
               <button className="bg-cyan-500 hover:bg-cyan-600 text-white font-semibold px-8 py-3 rounded transition-colors">
