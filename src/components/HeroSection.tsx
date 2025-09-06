@@ -1,5 +1,4 @@
 import { ChevronDown, Github, Linkedin, Mail } from 'lucide-react';
-import gupisValleyHero from '../assets/gupis-valley-hero.jpg';
 
 export const HeroSection = () => {
 
@@ -8,7 +7,7 @@ export const HeroSection = () => {
       id="home" 
       className="relative min-h-screen flex items-center justify-center text-center"
       style={{
-        background: `linear-gradient(135deg, hsl(210 25% 8% / 0.7) 0%, hsl(210 20% 12% / 0.8) 100%), url(${gupisValleyHero})`,
+        background: 'linear-gradient(135deg, hsl(210 25% 8% / 0.7) 0%, hsl(210 20% 12% / 0.8) 100%), url(/lovable-uploads/89aec534-2aa3-4386-99fe-6d847c1955d7.png)',
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundAttachment: 'fixed'
