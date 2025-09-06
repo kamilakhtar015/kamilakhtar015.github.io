@@ -1,64 +1,36 @@
 export const ActivitiesSection = () => {
   const activities = [
     {
-      title: "Graduate Research Assistant",
-      organization: "Georgia State University",
-      period: "August 2024 - Present",
-      description: [
-        "Conducting research in machine learning and computational biology.",
-        "Collaborating with faculty on research publications.",
-        "Developing ML models for genomic data analysis.",
-        "Contributing to academic papers and conference presentations."
-      ]
-    },
-    {
-      title: "ML Engineering Intern",
-      organization: "Tech Innovation Lab",
-      period: "May 2024 - August 2024",
-      description: [
-        "Developed and deployed machine learning models in production.",
-        "Improved model accuracy by 15% through advanced feature engineering.",
-        "Collaborated with cross-functional teams on data science projects."
-      ]
-    },
-    {
       title: "Graduate Teaching Assistant",
-      organization: "Computer Science Department",
-      period: "January 2024 - Present",
+      organization: "Georgia State University",
+      period: "January 2025 - Present",
       description: [
-        "Assisting undergraduate students in data structures and algorithms.",
-        "Conducting lab sessions and grading assignments.",
-        "Mentoring students in programming and problem-solving techniques."
+        "Currently serving as GTA for Principles of Computer Science 2 and Machine Learning courses.",
+        "Assisting professors with course management and student support.",
+        "Conducting tutorials and make-up classes for students.",
+        "Providing academic guidance and mentoring to undergraduate students."
       ]
     },
     {
-      title: "Data Science Research Volunteer",
-      organization: "Healthcare Analytics Initiative",
-      period: "September 2023 - December 2023",
+      title: "Student Assistant",
+      organization: "Andrew Young School, GSU",
+      period: "Summer 2025",
       description: [
-        "Applied machine learning to healthcare data analysis.",
-        "Contributed to predictive modeling for patient outcomes.",
-        "Collaborated with medical professionals on data interpretation."
+        "Conducted data analysis of graduate student projects with over 1,400 records.",
+        "Developed data storytelling presentations for stakeholders.",
+        "Presented findings to the Dean and Director of the school.",
+        "Contributed to data-driven decision making for academic programs."
       ]
     },
     {
-      title: "Student Organization Leader",
-      organization: "AI/ML Study Group",
-      period: "September 2023 - Present",
+      title: "Global Exchange Mobility",
+      organization: "University of Malaya, Malaysia",
+      period: "February 2023 - July 2023",
       description: [
-        "Leading weekly study sessions on machine learning topics.",
-        "Organizing workshops and guest speaker events.",
-        "Building a community of graduate students interested in AI research."
-      ]
-    },
-    {
-      title: "Competitive Programming Participant",
-      organization: "ACM Programming Contests",
-      period: "2022 - Present",
-      description: [
-        "Participating in regional and national programming competitions.",
-        "Improving algorithmic thinking and problem-solving skills.",
-        "Mentoring undergraduate students in competitive programming."
+        "Selected to represent my university in the global diversified exchange program.",
+        "Received fully funded scholarship for international academic exchange.",
+        "Interacted with more than 300 people from 40+ countries.",
+        "Enhanced cross-cultural communication and global perspective skills."
       ]
     }
   ];
