@@ -112,6 +112,52 @@ All colors MUST be HSL.
   }
 }
 
+/* Gupis Valley Animation Styles */
+.clip-path-mountain {
+  clip-path: polygon(0 100%, 20% 60%, 40% 80%, 60% 40%, 80% 70%, 100% 50%, 100% 100%);
+}
+
+.clip-path-mountain-2 {
+  clip-path: polygon(0 70%, 25% 30%, 50% 60%, 75% 20%, 100% 40%, 100% 100%, 0 100%);
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px) translateX(0px); }
+  25% { transform: translateY(-10px) translateX(5px); }
+  50% { transform: translateY(-20px) translateX(-5px); }
+  75% { transform: translateY(-10px) translateX(5px); }
+}
+
+@keyframes shimmer {
+  0% { transform: translateX(-100%) skewX(-12deg); }
+  100% { transform: translateX(200%) skewX(-12deg); }
+}
+
+@keyframes glow {
+  0%, 100% { opacity: 0.2; box-shadow: 0 0 5px currentColor; }
+  50% { opacity: 0.4; box-shadow: 0 0 20px currentColor; }
+}
+
+@keyframes wave {
+  0%, 100% { transform: translateX(0) scaleY(1); }
+  50% { transform: translateX(-10px) scaleY(1.1); }
+}
+
+@keyframes fadeInUp {
+  0% { opacity: 0; transform: translateY(30px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@keyframes scaleIn {
+  0% { opacity: 0; transform: scale(0.9); }
+  100% { opacity: 1; transform: scale(1); }
+}
+
 @layer base {
   * {
     @apply border-border;
