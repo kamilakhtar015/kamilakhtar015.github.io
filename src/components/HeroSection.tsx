@@ -1,5 +1,5 @@
 import { ChevronDown, Github, Linkedin, Mail } from 'lucide-react';
-import heroMountains from '../assets/hero-mountains.jpg';
+import gilgitBaltistanHero from '../assets/gilgit-baltistan-hero.jpg';
 
 export const HeroSection = () => {
 
@@ -8,7 +8,7 @@ export const HeroSection = () => {
       id="home" 
       className="relative min-h-screen flex items-center justify-center text-center"
       style={{
-        background: `linear-gradient(135deg, hsl(210 25% 8% / 0.7) 0%, hsl(210 20% 12% / 0.8) 100%), url(${heroMountains})`,
+        background: `linear-gradient(135deg, hsl(210 25% 8% / 0.7) 0%, hsl(210 20% 12% / 0.8) 100%), url(${gilgitBaltistanHero})`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundAttachment: 'fixed'
