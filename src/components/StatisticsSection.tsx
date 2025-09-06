@@ -42,9 +42,6 @@ export const StatisticsSection = () => {
       </div>
       
       <div className="container mx-auto px-4 relative z-10">
-        <div className="text-center mb-16">
-          <p className="text-teal-100 text-lg">Continuous growth in technology and personal development</p>
-        </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
           {currentFocus.map((project, index) => {
