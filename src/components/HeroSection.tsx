@@ -1,5 +1,5 @@
 import { ChevronDown, Github, Linkedin, Mail } from 'lucide-react';
-import gilgitBaltistanImage from '@/assets/gilgit-baltistan-valley.jpg';
+import gupisValleyClean from '@/assets/gupis-valley-clean.jpg';
 
 export const HeroSection = () => {
 
@@ -52,7 +52,7 @@ export const HeroSection = () => {
         <div 
           className="absolute inset-0 animated-bg"
           style={{
-            backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url('/lovable-uploads/b5ff34f6-101a-4789-ae05-6f5bcc850ce7.png')`,
+            backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url(${gupisValleyClean})`,
             backgroundSize: 'cover',
             backgroundPosition: 'center',
             backgroundAttachment: 'fixed'
@@ -63,6 +63,66 @@ export const HeroSection = () => {
         <div className="absolute inset-0 shimmer-overlay opacity-30" />
         
         <div className="container mx-auto px-4 z-10 floating-content">
+        {/* Location text overlay */}
+        <div className="absolute top-8 left-8 text-white/70 text-sm font-light tracking-wider">
+          Gilgit-Baltistan, Pakistan
+        </div>
+        <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 tracking-tight">
+          Kamil Akhtar
+        </h1>
+        <p className="text-xl md:text-2xl text-white/90 mb-6 font-light">
+          Machine Learning Engineer | Researcher | Data Analyst
+        </p>
+        
+        {/* Urdu Poetry */}
+        <div className="mb-6 max-w-4xl mx-auto">
+          <div className="text-center mb-4 text-lg md:text-xl text-emerald-300 font-medium leading-relaxed" style={{fontFamily: 'Noto Nastaliq Urdu, serif'}}>
+            خودی کو کر بلند اتنا کہ ہر تقدیر سے پہلے<br />
+            خدا بندے سے خود پوچھے، بتا تیری رضا کیا ہے
+          </div>
+          <div className="italic text-white/80 text-base md:text-lg leading-relaxed">
+            "Elevate your selfhood to such heights that, before every destiny is written,<br />
+            God Himself will ask you: Tell me, what is it that you desire?"
+          </div>
+        </div>
+        
+        <p className="text-lg text-white/80 mb-8 max-w-2xl mx-auto leading-relaxed">
+          Exploring the intersection of technology and life sciences in the beautiful landscapes of Pakistan.
+        </p>
+        
+
+        <div className="flex justify-center space-x-6 mb-16">
+          <a 
+            href="https://github.com/kamilakhtar015" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="text-white/80 hover:text-emerald-300 transition-smooth"
+          >
+            <Github size={24} />
+          </a>
+          <a 
+            href="https://www.linkedin.com/in/kamil-akhtar/"
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="text-white/80 hover:text-emerald-300 transition-smooth"
+          >
+            <Linkedin size={24} />
+          </a>
+          <a 
+            href="mailto:kamil.akhtar015@gmail.com"
+            className="text-white/80 hover:text-emerald-300 transition-smooth"
+          >
+            <Mail size={24} />
+          </a>
+        </div>
+
+        <div className="animate-bounce">
+          <ChevronDown 
+            size={32} 
+            className="text-white/60 mx-auto cursor-pointer hover:text-emerald-300 transition-smooth"
+            onClick={() => document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' })}
+          />
+        </div>
         </div>
       </section>
     </>
