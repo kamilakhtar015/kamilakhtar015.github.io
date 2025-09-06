@@ -34,32 +34,31 @@ export const StatisticsSection = () => {
 
   const currentFocus = [
     {
-      title: "Deep Learning Research",
-      description: "Exploring transformer architectures for NLP applications",
-      progress: 75,
+      title: "Learning Deep Learning Concepts",
+      description: "Mastering neural networks, transformers, and advanced architectures",
+      progress: 65,
       icon: Brain
     },
     {
-      title: "MLOps Pipeline",
-      description: "Building scalable ML deployment infrastructure",
-      progress: 60,
-      icon: Rocket
+      title: "Bioinformatics Algorithms Exploration",
+      description: "Studying computational biology and genomic data analysis",
+      progress: 45,
+      icon: Code2
     },
     {
-      title: "Open Source Contributions",
-      description: "Contributing to scikit-learn and TensorFlow",
-      progress: 40,
-      icon: Code2
+      title: "Research Papers to Write",
+      description: "Working on publications in ML and computational biology",
+      progress: 30,
+      icon: TrendingUp
+    },
+    {
+      title: "Swimming Learning",
+      description: "Developing swimming techniques and building water confidence",
+      progress: 20,
+      icon: Users
     }
   ];
 
-  const skills = [
-    { name: "Python/PyTorch", level: 95 },
-    { name: "TensorFlow", level: 90 },
-    { name: "Data Analysis", level: 88 },
-    { name: "Cloud Computing", level: 82 },
-    { name: "Research & Publishing", level: 78 }
-  ];
 
   return (
     <section id="achievements" className="py-20 bg-gradient-to-br from-slate-900 via-blue-900 to-slate-800 text-white relative overflow-hidden">
@@ -103,18 +102,18 @@ export const StatisticsSection = () => {
           })}
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-12">
-          {/* Current Projects */}
+        <div className="max-w-4xl mx-auto">
+          {/* Current Learning & Focus */}
           <div className="bg-white/5 rounded-xl p-8 backdrop-blur-sm border border-white/10">
-            <div className="flex items-center mb-6">
+            <div className="flex items-center justify-center mb-6">
               <TrendingUp className="text-green-400 mr-3" size={24} />
-              <h3 className="text-2xl font-bold text-white">Active Projects</h3>
+              <h3 className="text-2xl font-bold text-white">Current Learning & Focus</h3>
             </div>
-            <div className="space-y-6">
+            <div className="grid md:grid-cols-2 gap-6">
               {currentFocus.map((project, index) => {
                 const IconComponent = project.icon;
                 return (
-                  <div key={index} className="space-y-3">
+                  <div key={index} className="space-y-3 bg-white/5 rounded-lg p-6">
                     <div className="flex items-center justify-between">
                       <div className="flex items-center">
                         <IconComponent className="text-blue-400 mr-3" size={20} />
@@ -122,42 +121,16 @@ export const StatisticsSection = () => {
                       </div>
                       <span className="text-blue-300 text-sm">{project.progress}%</span>
                     </div>
-                    <p className="text-blue-200 text-sm ml-8">{project.description}</p>
-                    <div className="ml-8">
-                      <div className="w-full bg-white/20 rounded-full h-2">
-                        <div 
-                          className="bg-gradient-to-r from-blue-400 to-purple-400 h-2 rounded-full transition-all duration-1000"
-                          style={{width: `${project.progress}%`}}
-                        ></div>
-                      </div>
+                    <p className="text-blue-200 text-sm">{project.description}</p>
+                    <div className="w-full bg-white/20 rounded-full h-2">
+                      <div 
+                        className="bg-gradient-to-r from-blue-400 to-purple-400 h-2 rounded-full transition-all duration-1000"
+                        style={{width: `${project.progress}%`}}
+                      ></div>
                     </div>
                   </div>
                 );
               })}
-            </div>
-          </div>
-
-          {/* Skills Mastery */}
-          <div className="bg-white/5 rounded-xl p-8 backdrop-blur-sm border border-white/10">
-            <div className="flex items-center mb-6">
-              <Trophy className="text-yellow-400 mr-3" size={24} />
-              <h3 className="text-2xl font-bold text-white">Technical Expertise</h3>
-            </div>
-            <div className="space-y-4">
-              {skills.map((skill, index) => (
-                <div key={index} className="space-y-2">
-                  <div className="flex justify-between items-center">
-                    <span className="text-white font-medium">{skill.name}</span>
-                    <span className="text-blue-300 text-sm">{skill.level}%</span>
-                  </div>
-                  <div className="w-full bg-white/20 rounded-full h-2">
-                    <div 
-                      className="bg-gradient-to-r from-green-400 to-blue-400 h-2 rounded-full transition-all duration-1000 delay-300"
-                      style={{width: `${skill.level}%`}}
-                    ></div>
-                  </div>
-                </div>
-              ))}
             </div>
           </div>
         </div>
