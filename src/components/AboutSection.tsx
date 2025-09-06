@@ -1,4 +1,3 @@
-import profileImage from '../assets/kamil-profile.png';
 export const AboutSection = () => {
   const skills = [
     { name: 'Python & Data Analysis', level: 90 },
@@ -22,8 +21,8 @@ export const AboutSection = () => {
           <div className="md:col-span-3 flex justify-center">
             <div className="w-48 h-48 rounded-full bg-gradient-to-br from-accent/30 to-primary/30 flex items-center justify-center border-4 border-orange-500/30 overflow-hidden">
               <img 
-                src={profileImage}
-                alt="Kamil Akhtar profile photo"
+                src="/src/assets/kamil-profile.png" 
+                alt="Kamil Akhtar"
                 className="w-44 h-44 rounded-full object-cover object-center"
               />
             </div>
