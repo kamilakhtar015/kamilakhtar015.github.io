@@ -29,7 +29,7 @@ export const StatisticsSection = () => {
   ];
 
   return (
-    <section id="learning-focus" className="py-20 bg-teal-500 text-white relative overflow-hidden">
+    <section id="learning-focus" className="py-20 bg-sky-400 text-white relative overflow-hidden">
       {/* Animated background elements */}
       <div className="absolute inset-0">
         <div className="absolute top-20 left-10 w-32 h-32 bg-white/10 rounded-full blur-xl animate-pulse"></div>
@@ -43,7 +43,7 @@ export const StatisticsSection = () => {
             <TrendingUp className="text-white mr-3" size={32} />
             <h2 className="text-4xl md:text-5xl font-bold text-white">Current Learning & Focus</h2>
           </div>
-          <p className="text-teal-100 text-lg">Continuous growth in technology and personal development</p>
+          <p className="text-sky-100 text-lg">Continuous growth in technology and personal development</p>
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
@@ -56,21 +56,21 @@ export const StatisticsSection = () => {
               >
                 <div className="flex items-center justify-between mb-4">
                   <IconComponent className="text-white" size={24} />
-                  <span className="text-teal-100 text-sm font-semibold">{project.progress}%</span>
+                  <span className="text-sky-100 text-sm font-semibold">{project.progress}%</span>
                 </div>
                 
                 <h3 className="font-bold text-white text-lg mb-3 leading-tight">
                   {project.title}
                 </h3>
                 
-                <p className="text-teal-100 text-sm mb-4 leading-relaxed">
+                <p className="text-sky-100 text-sm mb-4 leading-relaxed">
                   {project.description}
                 </p>
                 
                 <div className="space-y-2">
                   <div className="w-full bg-white/20 rounded-full h-2">
                     <div 
-                      className="bg-gradient-to-r from-white to-teal-200 h-2 rounded-full transition-all duration-1000"
+                      className="bg-gradient-to-r from-white to-sky-200 h-2 rounded-full transition-all duration-1000"
                       style={{width: `${project.progress}%`}}
                     ></div>
                   </div>
