@@ -84,9 +84,9 @@ export const ActivitiesSection = () => {
         </div>
 
         <div className="max-w-6xl mx-auto">
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="grid md:grid-cols-2 gap-12">
             {activities.map((activity, index) => (
-              <div key={index} className="bg-white/5 rounded-lg p-6 hover:bg-white/10 transition-all duration-300 border border-white/10">
+              <div key={index} className="mb-12">
                 <h3 className="text-orange-500 text-xl font-bold mb-2">{activity.title}</h3>
                 <p className="text-gray-400 text-sm mb-1 italic">{activity.organization}</p>
                 <p className="text-gray-400 text-sm mb-4">{activity.period}</p>
@@ -94,7 +94,7 @@ export const ActivitiesSection = () => {
                 <div className="space-y-2">
                   {activity.description.map((desc, descIndex) => (
                     <p key={descIndex} className="text-gray-300 leading-relaxed text-sm">
-                      • {desc}
+                      {desc}
                     </p>
                   ))}
                 </div>
