@@ -1,53 +1,64 @@
 export const ActivitiesSection = () => {
   const activities = [
     {
-      title: "Founder/Co-President",
-      organization: "Tech Innovation Club",
-      period: "March 2023 - Present",
+      title: "Graduate Research Assistant",
+      organization: "Georgia State University",
+      period: "August 2024 - Present",
       description: [
-        "Organized executive board members & meetings.",
-        "Designed SIA discussion event posters.",
-        "Took record of SIA meetings & discussions.",
-        "Recruited Stanford students into club members."
+        "Conducting research in machine learning and computational biology.",
+        "Collaborating with faculty on research publications.",
+        "Developing ML models for genomic data analysis.",
+        "Contributing to academic papers and conference presentations."
       ]
     },
     {
-      title: "Webmaster",
-      organization: "Student Organization",
-      period: "September 2022 - Present",
+      title: "ML Engineering Intern",
+      organization: "Tech Innovation Lab",
+      period: "May 2024 - August 2024",
       description: [
-        "Set homepage for the biggest Asian interest society in campus.",
-        "Publicized the organization's activity, redesigned user interface that doubled website traffic.",
-        "Gained 50% fans."
+        "Developed and deployed machine learning models in production.",
+        "Improved model accuracy by 15% through advanced feature engineering.",
+        "Collaborated with cross-functional teams on data science projects."
       ]
     },
     {
-      title: "Student Associate",
-      organization: "University Library",
-      period: "January 2022 - December 2022",
+      title: "Graduate Teaching Assistant",
+      organization: "Computer Science Department",
+      period: "January 2024 - Present",
       description: [
-        "Helped manage 10000+ books through returning, lending, and shelving books.",
-        "Assisted library users at the front desk.",
-        "Participated in library user interface through Google Docs."
+        "Assisting undergraduate students in data structures and algorithms.",
+        "Conducting lab sessions and grading assignments.",
+        "Mentoring students in programming and problem-solving techniques."
       ]
     },
     {
-      title: "Community Director",
-      organization: "Pakistan Technology Development Society",
-      period: "September 2021 - March 2022",
+      title: "Data Science Research Volunteer",
+      organization: "Healthcare Analytics Initiative",
+      period: "September 2023 - December 2023",
       description: [
-        "Fostered brainstorming community on campus through designing club logos.",
-        "Organized the first Stanford Bioengineering Hackathon supported by Genentech, Operators, FTX, and other biotech companies.",
-        "200+ attendees."
+        "Applied machine learning to healthcare data analysis.",
+        "Contributed to predictive modeling for patient outcomes.",
+        "Collaborated with medical professionals on data interpretation."
       ]
     },
     {
-      title: "Center player",
-      organization: "Stanford Recreational Fitness Basketball",
-      period: "September 2020 - March 2021",
+      title: "Student Organization Leader",
+      organization: "AI/ML Study Group",
+      period: "September 2023 - Present",
       description: [
-        "Participated in intramural basketball league every week.",
-        "Played in varsity basketball team during high school."
+        "Leading weekly study sessions on machine learning topics.",
+        "Organizing workshops and guest speaker events.",
+        "Building a community of graduate students interested in AI research."
+      ]
+    },
+    {
+      title: "Competitive Programming Participant",
+      organization: "ACM Programming Contests",
+      period: "2022 - Present",
+      description: [
+        "Participating in regional and national programming competitions.",
+        "Improving algorithmic thinking and problem-solving skills.",
+        "Mentoring undergraduate students in competitive programming."
       ]
     }
   ];
@@ -68,26 +79,28 @@ export const ActivitiesSection = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-orange-500 text-lg font-semibold mb-4 tracking-wider uppercase">Activities</h2>
-          <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">My positions during undergraduate.</h1>
-          <p className="text-gray-300 text-lg">Summary of my leadership & extracurricular activities</p>
+          <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">My journey as a Masters student.</h1>
+          <p className="text-gray-300 text-lg">Research, leadership & professional development activities</p>
         </div>
 
-        <div className="max-w-4xl mx-auto space-y-12">
-          {activities.map((activity, index) => (
-            <div key={index} className="text-center">
-              <h3 className="text-orange-500 text-xl font-bold mb-2">{activity.title}</h3>
-              <p className="text-gray-400 text-sm mb-1 italic">{activity.organization}</p>
-              <p className="text-gray-400 text-sm mb-6">{activity.period}</p>
-              
-              <div className="space-y-2">
-                {activity.description.map((desc, descIndex) => (
-                  <p key={descIndex} className="text-gray-300 leading-relaxed">
-                    {desc}
-                  </p>
-                ))}
+        <div className="max-w-6xl mx-auto">
+          <div className="grid md:grid-cols-2 gap-8">
+            {activities.map((activity, index) => (
+              <div key={index} className="bg-white/5 rounded-lg p-6 hover:bg-white/10 transition-all duration-300 border border-white/10">
+                <h3 className="text-orange-500 text-xl font-bold mb-2">{activity.title}</h3>
+                <p className="text-gray-400 text-sm mb-1 italic">{activity.organization}</p>
+                <p className="text-gray-400 text-sm mb-4">{activity.period}</p>
+                
+                <div className="space-y-2">
+                  {activity.description.map((desc, descIndex) => (
+                    <p key={descIndex} className="text-gray-300 leading-relaxed text-sm">
+                      • {desc}
+                    </p>
+                  ))}
+                </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
       </div>
     </section>
