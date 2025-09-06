@@ -43,10 +43,6 @@ export const StatisticsSection = () => {
       
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center mb-16">
-          <div className="flex items-center justify-center mb-6">
-            <TrendingUp className="text-white mr-3" size={32} />
-            <h2 className="text-4xl md:text-5xl font-bold text-white">Current Learning & Focus</h2>
-          </div>
           <p className="text-teal-100 text-lg">Continuous growth in technology and personal development</p>
         </div>
 
