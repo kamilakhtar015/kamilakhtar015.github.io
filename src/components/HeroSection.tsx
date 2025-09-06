@@ -1,5 +1,5 @@
 import { ChevronDown, Github, Linkedin, Mail } from 'lucide-react';
-import gupisValleyHero from '@/assets/gupis-valley-hero.jpg';
+import gupisValleyHero from '@/assets/gupis-valley-hero-v2.jpg';
 
 export const HeroSection = () => {
 
