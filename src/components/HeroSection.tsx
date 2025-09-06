@@ -7,7 +7,7 @@ export const HeroSection = () => {
       id="home" 
       className="relative min-h-screen flex items-center justify-center text-center"
       style={{
-        background: 'linear-gradient(135deg, hsl(210 25% 8%) 0%, hsl(210 20% 12%) 100%)',
+        backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)), url('/public/lovable-uploads/74c8ccb0-dd8d-4915-8714-83d0d553c695.png')`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundAttachment: 'fixed'
