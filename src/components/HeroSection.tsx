@@ -8,7 +8,7 @@ export const HeroSection = () => {
       id="home" 
       className="relative min-h-screen flex items-center justify-center text-center"
       style={{
-        backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url(${gilgitBaltistanImage})`,
+        backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url('/lovable-uploads/b5ff34f6-101a-4789-ae05-6f5bcc850ce7.png')`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundAttachment: 'fixed'
