@@ -22,7 +22,7 @@ export const HeroSection = () => {
           Kamil Akhtar
         </h1>
         <p className="text-xl md:text-2xl text-white/90 mb-6 font-light">
-          Machine Learning Engineering | Researcher | Data Analyst
+          Machine Learning Engineer | Researcher | Data Analyst
         </p>
         
         {/* Urdu Poetry */}
