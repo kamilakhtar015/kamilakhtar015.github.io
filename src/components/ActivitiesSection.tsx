@@ -62,7 +62,7 @@ export const ActivitiesSection = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-orange-500 text-lg font-semibold mb-4 tracking-wider uppercase">Activities</h2>
-          <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">My journey as a Masters student.</h1>
+          <h1 className="text-3xl md:text-4xl font-bold text-white mb-6">My journey till now all along the way.</h1>
           <p className="text-gray-300 text-lg">Research, leadership & professional development activities</p>
         </div>
 
