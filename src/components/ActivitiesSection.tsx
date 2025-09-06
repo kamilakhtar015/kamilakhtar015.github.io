@@ -32,6 +32,17 @@ export const ActivitiesSection = () => {
         "Interacted with more than 300 people from 40+ countries.",
         "Enhanced cross-cultural communication and global perspective skills."
       ]
+    },
+    {
+      title: "Program Director",
+      organization: "Computer Science Society, IBA Karachi",
+      period: "January 2024 - May 2024",
+      description: [
+        "Organized 2 city-level hackathons among 10 university students.",
+        "Coordinated 2 industry specialist talks with direct engagement opportunities.",
+        "Facilitated networking between students and industry experts.",
+        "Enhanced community engagement in computer science education."
+      ]
     }
   ];
 
