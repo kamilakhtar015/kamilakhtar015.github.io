@@ -30,9 +30,9 @@ export const ContactSection = () => {
             </div>
             <h3 className="text-orange-500 text-lg font-bold mb-4">Where To Find Me</h3>
             <p className="text-gray-300 leading-relaxed">
-              123 Tech Street<br />
-              Stanford, CA<br />
-              94305, US
+              Georgia State University<br />
+              Atlanta, GA<br />
+              30303, US
             </p>
           </div>
 
