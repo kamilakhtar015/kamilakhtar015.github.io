@@ -6,12 +6,12 @@ import { ProjectsSection } from '@/components/ProjectsSection';
 import { ActivitiesSection } from '@/components/ActivitiesSection';
 import { StatisticsSection } from '@/components/StatisticsSection';
 import { ContactSection } from '@/components/ContactSection';
-import { NotificationBanner } from '@/components/NotificationBanner';
+
 
 const Index = () => {
   return (
     <div className="min-h-screen">
-      <NotificationBanner />
+      
       <Navigation />
       <HeroSection />
       <AboutSection />
