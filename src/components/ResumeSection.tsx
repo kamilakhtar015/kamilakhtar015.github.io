@@ -9,10 +9,10 @@ const industryExperiences = [
     description: 'Designed and deployed full-stack AI applications, including an ATS Resume Analyzer. Automated workflows using Supabase and n8n, reducing manual operations by 70%. Partnered with clients to translate technical results into actionable business insights.'
   },
   {
-    role: 'Data Analyst Intern',
-    company: 'Tafsol Technologies, Karachi',
-    period: 'May 2024 - Dec 2024',
-    description: 'Queried large datasets with SQL to identify consumer trends that shaped client strategy. Built interactive Power BI and Tableau dashboards to track KPIs and streamline reporting. Reduced report generation time by 30% through dashboard automation.'
+    role: 'Data Analyst',
+    company: 'Andrew Young School of Policy Studies, Georgia State University',
+    period: 'Jun 2025 - Aug 2025',
+    description: 'Comprehensive data analysis project analyzing 1400+ alumni records. Achieved key performance indicators including 95%+ alumni location tracking accuracy and 80%+ employment rate analysis, providing critical insights for academic program evaluation and student career services.'
   },
   {
     role: 'Machine Learning Intern',
