@@ -46,6 +46,11 @@ export const ProjectModal = ({ project, isOpen, onClose }: ProjectModalProps) =>
             {project.description}
           </p>
 
+          {/* Note */}
+          <p className="text-xs text-muted-foreground/60 italic">
+            Find this project in the Live MVPs & SaaS Products section of Crestview Consulting
+          </p>
+
           {/* Technology Tags */}
           <div className="flex flex-wrap gap-2 pt-1">
             {project.tags.map((tag) => (
