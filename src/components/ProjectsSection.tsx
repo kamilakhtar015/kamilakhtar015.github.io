@@ -7,6 +7,7 @@ import resumeAnalyzerImage from '@/assets/resume-analyzer-dashboard.jpg';
 import machineLearningImage from '@/assets/machine-learning-projects.jpg';
 import rsaTimingAttackImage from '@/assets/rsa-timing-attack.jpg';
 import californiaHousingImage from '@/assets/california-housing-prediction.jpg';
+import tableauSalesImage from '@/assets/tableau-sales-insights.jpg';
 
 const projects = [
   {
@@ -44,6 +45,15 @@ const projects = [
     githubUrl: 'https://github.com/kamilakhtar015/CaliHousing-PricePred',
     category: 'Data Science',
     image: californiaHousingImage
+  },
+  {
+    title: 'Tableau Sales Insights',
+    description: 'An interactive data visualization project analyzing sales performance across regions, products, and customer segments. Built dynamic Tableau dashboards to uncover key business insights, track revenue trends, and support data-driven decision-making for sales strategy.',
+    tags: ['Tableau', 'Data Visualization', 'Business Intelligence', 'Sales Analytics', 'Dashboard Design'],
+    liveUrl: 'https://github.com/kamilakhtar015/tableau-sales-insights-india',
+    githubUrl: 'https://github.com/kamilakhtar015/tableau-sales-insights-india',
+    category: 'Business Intelligence',
+    image: tableauSalesImage
   },
   {
     title: 'AI-Powered Task Manager',
