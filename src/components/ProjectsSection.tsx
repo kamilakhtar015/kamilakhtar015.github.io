@@ -90,54 +90,25 @@ export const ProjectsSection = () => {
           {projects.map((project, index) => (
             <div 
               key={index}
-              className="relative group cursor-pointer overflow-hidden rounded-lg shadow-card hover:shadow-elegant transition-smooth"
+              className="relative group cursor-pointer overflow-hidden rounded-lg transition-smooth"
               onClick={() => handleProjectClick(project)}
             >
-              {/* Project Image */}
-              <div className="relative h-64 overflow-hidden">
+              {/* Project Image Only */}
+              <div className="relative h-64 overflow-hidden rounded-lg">
                 <img 
                   src={project.image} 
                   alt={project.title}
                   className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
                 />
                 
-                {/* Overlay on hover */}
-                <div className="absolute inset-0 bg-black/0 group-hover:bg-black/60 transition-colors duration-300" />
+                {/* Subtle overlay on hover */}
+                <div className="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition-colors duration-300" />
                 
-                {/* Project title overlay */}
-                <div className="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  <div className="bg-white/90 backdrop-blur-sm px-3 py-1 rounded-md">
-                    <h3 className="text-sm font-semibold text-gray-900">
-                      {project.title}
-                    </h3>
-                  </div>
-                </div>
-
-                {/* Center play/click indicator */}
+                {/* Center click indicator */}
                 <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   <div className="bg-white/20 backdrop-blur-sm rounded-full p-4">
                     <ExternalLink className="w-6 h-6 text-white" />
                   </div>
-                </div>
-              </div>
-
-              {/* Quick info bar at bottom */}
-              <div className="absolute bottom-0 left-0 right-0 bg-white/95 backdrop-blur-sm p-3 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
-                <div className="flex flex-wrap gap-1">
-                  {project.tags.slice(0, 3).map((tag) => (
-                    <Badge 
-                      key={tag} 
-                      variant="secondary"
-                      className="text-xs"
-                    >
-                      {tag}
-                    </Badge>
-                  ))}
-                  {project.tags.length > 3 && (
-                    <Badge variant="outline" className="text-xs">
-                      +{project.tags.length - 3}
-                    </Badge>
-                  )}
                 </div>
               </div>
             </div>
