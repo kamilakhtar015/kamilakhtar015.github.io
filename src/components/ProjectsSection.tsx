@@ -16,12 +16,12 @@ const projects = [
     image: resumeAnalyzerImage
   },
   {
-    title: 'E-Commerce Analytics Dashboard',
-    description: 'Real-time analytics dashboard for e-commerce businesses with interactive charts and KPI tracking.',
-    tags: ['React', 'D3.js', 'Node.js', 'PostgreSQL'],
-    liveUrl: 'https://example.com',
+    title: 'Machine Learning Projects',
+    description: 'A comprehensive collection of machine learning implementations including Urban Scene Segmentation using DeeplabV3 model on German CityScape Dataset, PCA Implementation, Naive Bayes Classifier for Buyers attitude analysis, and various CNN architectures for computer vision tasks.',
+    tags: ['Python', 'TensorFlow', 'OpenCV', 'DeeplabV3', 'PCA', 'Naive Bayes', 'CNN'],
+    liveUrl: 'https://github.com/example',
     githubUrl: 'https://github.com/example',
-    category: 'Web Development',
+    category: 'Machine Learning',
     image: '/placeholder.svg'
   },
   {
