@@ -17,7 +17,6 @@ export const HeroSection = () => {
         {/* K2 Peak info */}
         <div className="absolute top-8 right-8 text-white/80 text-sm font-light tracking-wider text-right">
           <div className="font-medium">K2 Peak</div>
-          <div className="text-xs text-white/60 mt-1">"Savage Mountain"</div>
           <div className="text-xs text-white/60">Karakoram Range, Gilgit-Baltistan</div>
         </div>
         
