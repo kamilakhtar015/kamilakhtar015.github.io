@@ -13,7 +13,7 @@ export const ActivitiesSection = () => {
     },
     {
       title: "Student Assistant",
-      organization: "Andrew Young School, GSU",
+      organization: "Andrew Young School, Georgia State University",
       period: "Summer 2025",
       description: [
         "Conducted data analysis of graduate student projects with over 1,400 records.",
