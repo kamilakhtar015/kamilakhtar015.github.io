@@ -39,7 +39,7 @@ const researchExperiences = [
     role: 'Graduate Teaching Assistant',
     company: 'Georgia State University',
     period: '2025 - Present',
-    description: 'Teaching Assistant for Machine Learning and Computer Science courses. Assisting students with complex concepts, grading assignments, and conducting lab sessions to enhance practical understanding of theoretical concepts.'
+    description: 'Teaching Assistant for Machine Learning and Principles of Computer Science 2 courses. Assisted professors with curriculum development, conducted weekly tutorial sessions for 50+ students, provided one-on-one academic support, graded assignments and exams, and facilitated hands-on lab sessions to enhance students\' practical understanding of complex theoretical concepts and programming fundamentals.'
   }
 ];
 
