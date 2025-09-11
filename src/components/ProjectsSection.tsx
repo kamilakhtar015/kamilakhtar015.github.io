@@ -6,7 +6,7 @@ const projects = [
   {
     title: 'Resume Analyzer',
     description: 'Advanced ATS checking system that analyzes resumes for optimal job application success. This AI-powered tool helps format and structure documents intelligently, ensuring consistency and saving valuable time in the job search process.',
-    tags: ['AI', 'Document Processing', 'ATS Optimization', 'Machine Learning', 'n8n', 'Supabase', 'TypeScript'],
+    tags: ['AI', 'ATS Optimization', 'n8n', 'Supabase', 'TypeScript'],
     liveUrl: 'https://crestviewaiautomations.com/',
     githubUrl: 'https://github.com/example',
     category: 'AI & Automation'
