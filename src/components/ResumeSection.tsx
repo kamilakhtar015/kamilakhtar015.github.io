@@ -39,7 +39,7 @@ const researchExperiences = [
     role: 'Graduate Teaching Assistant',
     company: 'Georgia State University',
     period: '2025 - Present',
-    description: '**Courses: Machine Learning and Principles of Computer Science 2**\n\nAssisted professors, conducted weekly tutorial sessions for 50+ students, provided one-on-one academic support, graded assignments and exams, and facilitated hands-on lab sessions to enhance students\' practical understanding of complex theoretical concepts and programming fundamentals.'
+    description: 'Assisted professors, conducted weekly tutorial sessions for 50+ students, provided one-on-one academic support, graded assignments and exams, and facilitated hands-on lab sessions to enhance students\' practical understanding of complex theoretical concepts and programming fundamentals.'
   }
 ];
 
@@ -142,7 +142,14 @@ export const ResumeSection = () => {
                       <div className="mb-4">
                         <span className="text-primary font-semibold text-lg">{exp.company}</span>
                       </div>
-                      <p className="text-muted-foreground leading-relaxed">{exp.description}</p>
+                      {exp.role === 'Graduate Teaching Assistant' ? (
+                        <div className="text-muted-foreground leading-relaxed">
+                          <div className="font-bold text-card-foreground mb-2">Courses: Machine Learning and Principles of Computer Science 2</div>
+                          <p>Assisted professors, conducted weekly tutorial sessions for 50+ students, provided one-on-one academic support, graded assignments and exams, and facilitated hands-on lab sessions to enhance students' practical understanding of complex theoretical concepts and programming fundamentals.</p>
+                        </div>
+                      ) : (
+                        <p className="text-muted-foreground leading-relaxed">{exp.description}</p>
+                      )}
                     </div>
                   </div>
                 ))}
