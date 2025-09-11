@@ -18,7 +18,7 @@ export const StatisticsSection = () => {
     },
     {
       title: "Research Papers to Write",
-      description: "Working on publications in ML and computational biology",
+      description: "Working on publications in ML, Computational Biology and Neuroscience",
       icon: TrendingUp,
       gradient: "from-orange-400 to-red-500",
       bgPattern: "bg-gradient-to-br from-orange-500/20 to-red-600/20"
