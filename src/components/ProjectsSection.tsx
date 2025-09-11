@@ -9,6 +9,7 @@ import rsaTimingAttackImage from '@/assets/rsa-timing-attack.jpg';
 import californiaHousingImage from '@/assets/california-housing-prediction.jpg';
 import tableauSalesImage from '@/assets/tableau-sales-insights.jpg';
 import personalWebsiteImage from '@/assets/personal-website.jpg';
+import graduateCareerImage from '@/assets/graduate-career-outcomes.jpg';
 
 const projects = [
   {
@@ -64,6 +65,15 @@ const projects = [
     githubUrl: 'https://github.com/kamilakhtar015/personal-website',
     category: 'Web Development',
     image: personalWebsiteImage
+  },
+  {
+    title: 'Graduate Career Outcomes Analysis',
+    description: 'Comprehensive data analysis project with the Andrew Young School of Policy Studies at Georgia State University analyzing 1400+ alumni records. Achieved key performance indicators including 95%+ alumni location tracking accuracy and 80%+ employment rate analysis, providing critical insights for academic program evaluation and student career services.',
+    tags: ['Data Analysis', 'Alumni Research', 'KPI Tracking', 'Statistical Analysis', 'Academic Research', 'Excel', 'Data Visualization'],
+    liveUrl: 'https://github.com/example',
+    githubUrl: 'https://github.com/example',
+    category: 'Data Analysis',
+    image: graduateCareerImage
   },
   {
     title: 'AI-Powered Task Manager',
