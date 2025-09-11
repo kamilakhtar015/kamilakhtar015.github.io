@@ -5,6 +5,7 @@ import { Badge } from '@/components/ui/badge';
 import { ProjectModal } from '@/components/ProjectModal';
 import resumeAnalyzerImage from '@/assets/resume-analyzer-dashboard.jpg';
 import machineLearningImage from '@/assets/machine-learning-projects.jpg';
+import rsaTimingAttackImage from '@/assets/rsa-timing-attack.jpg';
 
 const projects = [
   {
@@ -24,6 +25,15 @@ const projects = [
     githubUrl: 'https://github.com/kamilakhtar015/Machine-Learning---Concepts-GSU-',
     category: 'Machine Learning',
     image: machineLearningImage
+  },
+  {
+    title: 'RSA Timing Attack',
+    description: 'An implementation of a side-channel attack exploiting timing variations in RSA decryption to reconstruct private keys. The project simulates both the victim (RSA decryption) and the attacker (timing analysis), showcasing modular exponentiation, precise execution-time measurements, and statistical analysis for key recovery.',
+    tags: ['Python', 'Cryptography', 'Modular Exponentiation', 'Timing Analysis', 'Side-Channel Attack'],
+    liveUrl: 'https://github.com/kamilakhtar015/rsa-timing-attack',
+    githubUrl: 'https://github.com/kamilakhtar015/rsa-timing-attack',
+    category: 'Cybersecurity',
+    image: rsaTimingAttackImage
   },
   {
     title: 'AI-Powered Task Manager',
