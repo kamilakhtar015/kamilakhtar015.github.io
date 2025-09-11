@@ -3,7 +3,7 @@ import { ExternalLink, Github } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { ProjectModal } from '@/components/ProjectModal';
-import resumeAnalyzerImage from '@/assets/resume-analyzer-preview.jpg';
+import resumeAnalyzerImage from '@/assets/resume-analyzer-dashboard.jpg';
 import machineLearningImage from '@/assets/machine-learning-projects.jpg';
 
 const projects = [
