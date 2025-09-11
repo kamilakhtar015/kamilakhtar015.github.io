@@ -73,7 +73,7 @@ export const ResumeSection = () => {
             Resume
             <div className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-20 h-1 bg-gradient-to-r from-accent to-primary rounded-full"></div>
           </h2>
-          <p className="text-muted-foreground mb-6 text-lg">My professional journey and educational background</p>
+          <p className="text-muted-foreground mb-6 text-lg">MY PROFESSIONAL JOURNEY AND EDUCATIONAL BACKGROUND</p>
         </div>
 
         {/* Work Experience Section */}
