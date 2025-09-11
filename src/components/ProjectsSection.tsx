@@ -10,6 +10,7 @@ import californiaHousingImage from '@/assets/california-housing-prediction.jpg';
 import tableauSalesImage from '@/assets/tableau-sales-insights.jpg';
 import personalWebsiteImage from '@/assets/personal-website.jpg';
 import graduateCareerImage from '@/assets/graduate-career-outcomes.jpg';
+import privacyPreservingImage from '@/assets/privacy-preserving-gans.jpg';
 
 const projects = [
   {
@@ -76,40 +77,13 @@ const projects = [
     image: graduateCareerImage
   },
   {
-    title: 'AI-Powered Task Manager',
-    description: 'Smart task management app with AI suggestions and automated priority ranking.',
-    tags: ['TypeScript', 'Next.js', 'OpenAI', 'Prisma'],
-    liveUrl: 'https://example.com',
+    title: 'Privacy Preserving Image Harmonization using GANs',
+    description: 'Advanced research project implementing privacy-preserving image level harmonization using Generative Adversarial Networks with Federated Learning on the OpenBHB dataset. This ongoing research focuses on maintaining data privacy while achieving consistent image harmonization across distributed medical imaging datasets. (Project in Progress)',
+    tags: ['GANs', 'Federated Learning', 'Privacy Preservation', 'Medical Imaging', 'Deep Learning', 'OpenBHB', 'Research'],
+    liveUrl: 'https://github.com/example',
     githubUrl: 'https://github.com/example',
-    category: 'AI & Productivity',
-    image: '/placeholder.svg'
-  },
-  {
-    title: 'Financial Data Visualizer',
-    description: 'Interactive tool for visualizing stock market data with predictive analytics capabilities.',
-    tags: ['Python', 'Streamlit', 'Pandas', 'TensorFlow'],
-    liveUrl: 'https://example.com',
-    githubUrl: 'https://github.com/example',
-    category: 'Data Science',
-    image: '/placeholder.svg'
-  },
-  {
-    title: 'Real-time Chat Platform',
-    description: 'Scalable chat application with real-time messaging and file sharing capabilities.',
-    tags: ['React', 'Socket.io', 'Express', 'MongoDB'],
-    liveUrl: 'https://example.com',
-    githubUrl: 'https://github.com/example',
-    category: 'Web Development',
-    image: '/placeholder.svg'
-  },
-  {
-    title: 'Weather Forecast API',
-    description: 'RESTful API providing accurate weather forecasts with machine learning predictions.',
-    tags: ['FastAPI', 'Python', 'Redis', 'Docker'],
-    liveUrl: 'https://example.com',
-    githubUrl: 'https://github.com/example',
-    category: 'API Development',
-    image: '/placeholder.svg'
+    category: 'AI Research',
+    image: privacyPreservingImage
   }
 ];
 
