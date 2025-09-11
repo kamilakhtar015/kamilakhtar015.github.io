@@ -12,7 +12,7 @@ const industryExperiences = [
     role: 'Data Analyst',
     company: 'Andrew Young School of Policy Studies, Georgia State University',
     period: 'Jun 2025 - Aug 2025',
-    description: 'Comprehensive data analysis project analyzing 1400+ alumni records. Achieved key performance indicators including 95%+ alumni location tracking accuracy and 80%+ employment rate analysis, providing critical insights for academic program evaluation and student career services.'
+    description: 'Led the Graduate Career Outcomes Project, conducting comprehensive data analysis of 1400+ alumni records. Achieved key performance indicators including 95%+ alumni location tracking accuracy and 80%+ employment rate analysis, providing critical insights for academic program evaluation and student career services.'
   },
   {
     role: 'Machine Learning Intern',
