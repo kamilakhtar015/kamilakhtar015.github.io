@@ -39,9 +39,6 @@ export const HeroSection = () => {
           </div>
         </div>
         
-        <p className="text-lg text-white/80 mb-8 max-w-2xl mx-auto leading-relaxed">
-          Background: Beautiful glimpse of my village, Gupis Valley, nestled between the Himalayas and Karakoram.
-        </p>
         
         <div className="flex justify-center space-x-6 mb-16">
           <a 
