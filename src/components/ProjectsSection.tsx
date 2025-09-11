@@ -8,6 +8,7 @@ import machineLearningImage from '@/assets/machine-learning-projects.jpg';
 import rsaTimingAttackImage from '@/assets/rsa-timing-attack.jpg';
 import californiaHousingImage from '@/assets/california-housing-prediction.jpg';
 import tableauSalesImage from '@/assets/tableau-sales-insights.jpg';
+import personalWebsiteImage from '@/assets/personal-website.jpg';
 
 const projects = [
   {
@@ -54,6 +55,15 @@ const projects = [
     githubUrl: 'https://github.com/kamilakhtar015/tableau-sales-insights-india',
     category: 'Business Intelligence',
     image: tableauSalesImage
+  },
+  {
+    title: 'Personal Portfolio Website',
+    description: 'A modern and responsive personal portfolio website showcasing my projects, skills, and professional journey. Built with clean design principles, smooth animations, and optimized performance to create an engaging user experience that effectively communicates my expertise in software development and data science.',
+    tags: ['React', 'TypeScript', 'Tailwind CSS', 'Responsive Design', 'Portfolio', 'Web Development'],
+    liveUrl: 'https://github.com/kamilakhtar015/personal-website',
+    githubUrl: 'https://github.com/kamilakhtar015/personal-website',
+    category: 'Web Development',
+    image: personalWebsiteImage
   },
   {
     title: 'AI-Powered Task Manager',
