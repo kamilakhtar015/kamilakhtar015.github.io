@@ -14,9 +14,11 @@ export const HeroSection = () => {
       }}
     >
       <div className="container mx-auto px-4 z-10">
-        {/* K2 Peak label */}
-        <div className="absolute top-8 right-8 text-white/70 text-sm font-light tracking-wider">
-          K2 Peak
+        {/* K2 Peak info */}
+        <div className="absolute top-8 right-8 text-white/80 text-sm font-light tracking-wider text-right">
+          <div className="font-medium">K2 Peak</div>
+          <div className="text-xs text-white/60 mt-1">8,611m • "Savage Mountain"</div>
+          <div className="text-xs text-white/60">Karakoram Range, Gilgit-Baltistan</div>
         </div>
         
         <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 tracking-tight">
