@@ -27,17 +27,6 @@ export const HeroSection = () => {
           Machine Learning Engineer | Researcher | Data Analyst
         </p>
         
-        {/* Urdu Poetry */}
-        <div className="mb-6 max-w-4xl mx-auto">
-          <div className="text-center mb-4 text-lg md:text-xl text-accent font-medium leading-relaxed" style={{fontFamily: 'Noto Nastaliq Urdu, serif'}}>
-            خودی کو کر بلند اتنا کہ ہر تقدیر سے پہلے<br />
-            خدا بندے سے خود پوچھے، بتا تیری رضا کیا ہے
-          </div>
-          <div className="italic text-white/80 text-base md:text-lg leading-relaxed">
-            "Elevate your selfhood to such heights that, before every destiny is written,<br />
-            God Himself will ask you: Tell me, what is it that you desire?"
-          </div>
-        </div>
         
         
         <div className="flex justify-center space-x-6 mb-16">
