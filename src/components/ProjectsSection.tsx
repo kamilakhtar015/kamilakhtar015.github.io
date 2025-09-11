@@ -4,6 +4,7 @@ import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { ProjectModal } from '@/components/ProjectModal';
 import resumeAnalyzerImage from '@/assets/resume-analyzer-preview.jpg';
+import machineLearningImage from '@/assets/machine-learning-projects.jpg';
 
 const projects = [
   {
@@ -22,7 +23,7 @@ const projects = [
     liveUrl: 'https://github.com/example',
     githubUrl: 'https://github.com/example',
     category: 'Machine Learning',
-    image: '/placeholder.svg'
+    image: machineLearningImage
   },
   {
     title: 'AI-Powered Task Manager',
