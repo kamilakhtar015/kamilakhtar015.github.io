@@ -60,35 +60,57 @@ const education = [
 
 export const ResumeSection = () => {
   return (
-    <section id="resume" className="py-20 bg-background">
-      <div className="container mx-auto px-4">
-        <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold text-foreground mb-4">Resume</h2>
-          <p className="text-muted-foreground mb-6">My professional journey and educational background</p>
+    <section id="resume" className="py-20 bg-background relative overflow-hidden">
+      {/* Background decoration */}
+      <div className="absolute inset-0 opacity-5">
+        <div className="absolute top-20 left-10 w-32 h-32 rounded-full bg-accent animate-pulse"></div>
+        <div className="absolute bottom-20 right-10 w-24 h-24 rounded-full bg-primary animate-pulse delay-1000"></div>
+      </div>
+      
+      <div className="container mx-auto px-4 relative z-10">
+        <div className="text-center mb-16 animate-fade-in">
+          <h2 className="text-4xl font-bold text-foreground mb-4 relative">
+            Resume
+            <div className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-20 h-1 bg-gradient-to-r from-accent to-primary rounded-full"></div>
+          </h2>
+          <p className="text-muted-foreground mb-6 text-lg">My professional journey and educational background</p>
         </div>
 
         {/* Work Experience Section */}
-        <div className="mb-16">
-          <h3 className="text-2xl font-bold text-foreground mb-8 flex items-center">
-            <div className="w-1 h-8 bg-accent mr-4"></div>
-            Work Experience
-          </h3>
+        <div className="mb-20">
+          <div className="flex items-center mb-12 group">
+            <div className="w-2 h-10 bg-gradient-to-b from-accent to-primary mr-6 rounded-full group-hover:scale-110 transition-transform duration-300"></div>
+            <h3 className="text-3xl font-bold text-foreground">Work Experience</h3>
+            <div className="flex-1 h-px bg-gradient-to-r from-accent/30 to-transparent ml-6"></div>
+          </div>
           
-          <div className="grid lg:grid-cols-2 gap-12">
+          <div className="grid lg:grid-cols-2 gap-16">
             {/* Industry Experience */}
-            <div>
-              <h4 className="text-xl font-semibold text-accent mb-6">Industry</h4>
-              <div className="space-y-8">
+            <div className="animate-fade-in delay-200">
+              <div className="flex items-center mb-8">
+                <div className="w-3 h-3 bg-accent rounded-full mr-3 animate-pulse"></div>
+                <h4 className="text-2xl font-bold text-accent">Industry</h4>
+              </div>
+              <div className="space-y-10 relative">
+                <div className="absolute left-4 top-0 bottom-0 w-px bg-gradient-to-b from-accent via-accent/50 to-transparent"></div>
                 {industryExperiences.map((exp, index) => (
-                  <div key={index} className="relative pl-8 pb-8 border-l-2 border-muted last:border-l-0">
-                    <div className="absolute -left-2 top-0 w-4 h-4 bg-accent rounded-full"></div>
-                    <div className="bg-card p-6 rounded-lg shadow-card hover:shadow-elegant transition-smooth">
-                      <h5 className="text-lg font-semibold text-card-foreground mb-2">{exp.role}</h5>
-                      <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-3">
-                        <span className="text-accent font-medium">{exp.company}</span>
-                        <span className="text-sm text-muted-foreground">{exp.period}</span>
+                  <div 
+                    key={index} 
+                    className="relative pl-12 group animate-fade-in hover-scale"
+                    style={{ animationDelay: `${300 + index * 100}ms` }}
+                  >
+                    <div className="absolute -left-1 top-2 w-6 h-6 bg-accent rounded-full border-4 border-background shadow-lg group-hover:scale-125 transition-transform duration-300 flex items-center justify-center">
+                      <div className="w-2 h-2 bg-background rounded-full"></div>
+                    </div>
+                    <div className="bg-card p-8 rounded-xl shadow-card hover:shadow-elegant transition-all duration-300 border border-accent/10 group-hover:border-accent/30 group-hover:-translate-y-1">
+                      <div className="flex items-start justify-between mb-4">
+                        <h5 className="text-xl font-bold text-card-foreground group-hover:text-accent transition-colors duration-300">{exp.role}</h5>
+                        <span className="text-sm text-muted-foreground bg-accent/10 px-3 py-1 rounded-full font-medium">{exp.period}</span>
                       </div>
-                      <p className="text-muted-foreground">{exp.description}</p>
+                      <div className="mb-4">
+                        <span className="text-accent font-semibold text-lg">{exp.company}</span>
+                      </div>
+                      <p className="text-muted-foreground leading-relaxed">{exp.description}</p>
                     </div>
                   </div>
                 ))}
@@ -96,19 +118,31 @@ export const ResumeSection = () => {
             </div>
 
             {/* Research Experience */}
-            <div>
-              <h4 className="text-xl font-semibold text-accent mb-6">Research</h4>
-              <div className="space-y-8">
+            <div className="animate-fade-in delay-400">
+              <div className="flex items-center mb-8">
+                <div className="w-3 h-3 bg-primary rounded-full mr-3 animate-pulse delay-500"></div>
+                <h4 className="text-2xl font-bold text-primary">Research</h4>
+              </div>
+              <div className="space-y-10 relative">
+                <div className="absolute left-4 top-0 bottom-0 w-px bg-gradient-to-b from-primary via-primary/50 to-transparent"></div>
                 {researchExperiences.map((exp, index) => (
-                  <div key={index} className="relative pl-8 pb-8 border-l-2 border-muted last:border-l-0">
-                    <div className="absolute -left-2 top-0 w-4 h-4 bg-accent rounded-full"></div>
-                    <div className="bg-card p-6 rounded-lg shadow-card hover:shadow-elegant transition-smooth">
-                      <h5 className="text-lg font-semibold text-card-foreground mb-2">{exp.role}</h5>
-                      <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-3">
-                        <span className="text-accent font-medium">{exp.company}</span>
-                        <span className="text-sm text-muted-foreground">{exp.period}</span>
+                  <div 
+                    key={index} 
+                    className="relative pl-12 group animate-fade-in hover-scale"
+                    style={{ animationDelay: `${500 + index * 100}ms` }}
+                  >
+                    <div className="absolute -left-1 top-2 w-6 h-6 bg-primary rounded-full border-4 border-background shadow-lg group-hover:scale-125 transition-transform duration-300 flex items-center justify-center">
+                      <div className="w-2 h-2 bg-background rounded-full"></div>
+                    </div>
+                    <div className="bg-card p-8 rounded-xl shadow-card hover:shadow-elegant transition-all duration-300 border border-primary/10 group-hover:border-primary/30 group-hover:-translate-y-1">
+                      <div className="flex items-start justify-between mb-4">
+                        <h5 className="text-xl font-bold text-card-foreground group-hover:text-primary transition-colors duration-300">{exp.role}</h5>
+                        <span className="text-sm text-muted-foreground bg-primary/10 px-3 py-1 rounded-full font-medium">{exp.period}</span>
                       </div>
-                      <p className="text-muted-foreground">{exp.description}</p>
+                      <div className="mb-4">
+                        <span className="text-primary font-semibold text-lg">{exp.company}</span>
+                      </div>
+                      <p className="text-muted-foreground leading-relaxed">{exp.description}</p>
                     </div>
                   </div>
                 ))}
@@ -118,23 +152,33 @@ export const ResumeSection = () => {
         </div>
 
         {/* Education Section */}
-        <div>
-          <h3 className="text-2xl font-bold text-foreground mb-8 flex items-center">
-            <div className="w-1 h-8 bg-accent mr-4"></div>
-            Education
-          </h3>
+        <div className="animate-fade-in delay-800">
+          <div className="flex items-center mb-12 group">
+            <div className="w-2 h-10 bg-gradient-to-b from-primary to-accent mr-6 rounded-full group-hover:scale-110 transition-transform duration-300"></div>
+            <h3 className="text-3xl font-bold text-foreground">Education</h3>
+            <div className="flex-1 h-px bg-gradient-to-r from-primary/30 to-transparent ml-6"></div>
+          </div>
           
-          <div className="space-y-8">
+          <div className="space-y-10 relative max-w-4xl mx-auto">
+            <div className="absolute left-4 top-0 bottom-0 w-px bg-gradient-to-b from-primary via-accent to-transparent"></div>
             {education.map((edu, index) => (
-              <div key={index} className="relative pl-8 pb-8 border-l-2 border-muted last:border-l-0">
-                <div className="absolute -left-2 top-0 w-4 h-4 bg-accent rounded-full"></div>
-                <div className="bg-card p-6 rounded-lg shadow-card hover:shadow-elegant transition-smooth">
-                  <h4 className="text-xl font-semibold text-card-foreground mb-2">{edu.degree}</h4>
-                  <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-3">
-                    <span className="text-accent font-medium">{edu.institution}</span>
-                    <span className="text-sm text-muted-foreground">{edu.period}</span>
+              <div 
+                key={index} 
+                className="relative pl-12 group animate-fade-in hover-scale"
+                style={{ animationDelay: `${900 + index * 150}ms` }}
+              >
+                <div className="absolute -left-1 top-2 w-6 h-6 bg-gradient-to-r from-primary to-accent rounded-full border-4 border-background shadow-lg group-hover:scale-125 transition-transform duration-300 flex items-center justify-center">
+                  <div className="w-2 h-2 bg-background rounded-full"></div>
+                </div>
+                <div className="bg-card p-8 rounded-xl shadow-card hover:shadow-elegant transition-all duration-300 border border-gradient-to-r border-primary/10 group-hover:border-accent/30 group-hover:-translate-y-1">
+                  <div className="flex items-start justify-between mb-4">
+                    <h4 className="text-2xl font-bold text-card-foreground group-hover:text-primary transition-colors duration-300">{edu.degree}</h4>
+                    <span className="text-sm text-muted-foreground bg-gradient-to-r from-primary/10 to-accent/10 px-4 py-2 rounded-full font-medium">{edu.period}</span>
                   </div>
-                  <p className="text-muted-foreground">{edu.description}</p>
+                  <div className="mb-4">
+                    <span className="text-accent font-semibold text-xl">{edu.institution}</span>
+                  </div>
+                  <p className="text-muted-foreground leading-relaxed">{edu.description}</p>
                 </div>
               </div>
             ))}
