@@ -4,46 +4,52 @@ import { Badge } from '@/components/ui/badge';
 
 const projects = [
   {
+    title: 'Resume Analyzer - Format Friend AI',
+    description: 'An AI-powered tool that helps format and structure documents intelligently, saving time and ensuring consistency. Advanced ATS checking of resumes with AI agent backend for optimal job application success.',
+    tags: ['AI', 'Document Processing', 'ATS Optimization', 'Machine Learning'],
+    liveUrl: 'https://crestviewaiautomations.com/',
+    githubUrl: 'https://github.com/example',
+    category: 'AI & Automation'
+  },
+  {
     title: 'E-Commerce Analytics Dashboard',
     description: 'Real-time analytics dashboard for e-commerce businesses with interactive charts and KPI tracking.',
     tags: ['React', 'D3.js', 'Node.js', 'PostgreSQL'],
     liveUrl: 'https://example.com',
-    githubUrl: 'https://github.com/example'
+    githubUrl: 'https://github.com/example',
+    category: 'Web Development'
   },
   {
     title: 'AI-Powered Task Manager',
     description: 'Smart task management app with AI suggestions and automated priority ranking.',
     tags: ['TypeScript', 'Next.js', 'OpenAI', 'Prisma'],
     liveUrl: 'https://example.com',
-    githubUrl: 'https://github.com/example'
+    githubUrl: 'https://github.com/example',
+    category: 'AI & Productivity'
   },
   {
     title: 'Financial Data Visualizer',
     description: 'Interactive tool for visualizing stock market data with predictive analytics capabilities.',
     tags: ['Python', 'Streamlit', 'Pandas', 'TensorFlow'],
     liveUrl: 'https://example.com',
-    githubUrl: 'https://github.com/example'
+    githubUrl: 'https://github.com/example',
+    category: 'Data Science'
   },
   {
     title: 'Real-time Chat Platform',
     description: 'Scalable chat application with real-time messaging and file sharing capabilities.',
     tags: ['React', 'Socket.io', 'Express', 'MongoDB'],
     liveUrl: 'https://example.com',
-    githubUrl: 'https://github.com/example'
+    githubUrl: 'https://github.com/example',
+    category: 'Web Development'
   },
   {
     title: 'Weather Forecast API',
     description: 'RESTful API providing accurate weather forecasts with machine learning predictions.',
     tags: ['FastAPI', 'Python', 'Redis', 'Docker'],
     liveUrl: 'https://example.com',
-    githubUrl: 'https://github.com/example'
-  },
-  {
-    title: 'Personal Portfolio Website',
-    description: 'Responsive portfolio website with smooth animations and modern design principles.',
-    tags: ['React', 'Tailwind CSS', 'Framer Motion', 'Vite'],
-    liveUrl: 'https://example.com',
-    githubUrl: 'https://github.com/example'
+    githubUrl: 'https://github.com/example',
+    category: 'API Development'
   }
 ];
 
@@ -62,44 +68,56 @@ export const ProjectsSection = () => {
           {projects.map((project, index) => (
             <div 
               key={index}
-              className="bg-card rounded-lg shadow-card hover:shadow-elegant transition-smooth overflow-hidden group"
+              className="bg-card rounded-lg shadow-card hover:shadow-elegant transition-smooth overflow-hidden group relative border border-border/40"
             >
-              <div className="p-6">
-                <h3 className="text-xl font-semibold text-card-foreground mb-3 group-hover:text-accent transition-smooth">
-                  {project.title}
-                </h3>
-                <p className="text-muted-foreground mb-4 leading-relaxed">
-                  {project.description}
-                </p>
-                
-                <div className="flex flex-wrap gap-2 mb-6">
-                  {project.tags.map((tag) => (
-                    <Badge 
-                      key={tag} 
-                      variant="secondary"
-                      className="text-xs font-medium"
-                    >
-                      {tag}
-                    </Badge>
-                  ))}
+              {/* Category Badge */}
+              <div className="absolute top-4 right-4 z-10">
+                <Badge 
+                  variant="outline"
+                  className="bg-background/90 backdrop-blur-sm text-xs font-medium border-accent/20"
+                >
+                  {project.category}
+                </Badge>
+              </div>
+
+              <div className="p-6 h-full flex flex-col">
+                <div className="flex-1">
+                  <h3 className="text-xl font-semibold text-card-foreground mb-3 group-hover:text-accent transition-smooth pr-20">
+                    {project.title}
+                  </h3>
+                  <p className="text-muted-foreground mb-4 leading-relaxed text-sm">
+                    {project.description}
+                  </p>
+                  
+                  <div className="flex flex-wrap gap-2 mb-6">
+                    {project.tags.map((tag) => (
+                      <Badge 
+                        key={tag} 
+                        variant="secondary"
+                        className="text-xs font-medium bg-secondary/50 hover:bg-secondary transition-colors"
+                      >
+                        {tag}
+                      </Badge>
+                    ))}
+                  </div>
                 </div>
                 
-                <div className="flex gap-3">
+                <div className="flex gap-3 mt-auto">
                   <Button 
                     size="sm" 
                     variant="outline"
-                    className="flex-1 border-accent text-accent hover:bg-accent hover:text-accent-foreground transition-smooth"
+                    className="flex-1 border-accent/50 text-accent hover:bg-accent hover:text-accent-foreground transition-smooth group-hover:border-accent"
                     asChild
                   >
                     <a href={project.liveUrl} target="_blank" rel="noopener noreferrer">
                       <ExternalLink size={16} className="mr-2" />
-                      Live
+                      Live Demo
                     </a>
                   </Button>
                   <Button 
                     size="sm" 
                     variant="outline"
-                    className="flex-1 hover:bg-muted transition-smooth"
+                    className="flex-1 hover:bg-muted transition-smooth border-border/50 hover:border-border"
                     asChild
                   >
                     <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">
