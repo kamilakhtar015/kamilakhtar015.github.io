@@ -37,7 +37,7 @@ export const ProjectModal = ({ project, isOpen, onClose }: ProjectModalProps) =>
             <img 
               src={project.image} 
               alt={project.title}
-              className="w-full h-64 object-cover"
+              className="w-full h-80 object-cover"
             />
           </div>
 
@@ -71,19 +71,15 @@ export const ProjectModal = ({ project, isOpen, onClose }: ProjectModalProps) =>
               asChild
             >
               <a href={project.liveUrl} target="_blank" rel="noopener noreferrer">
-                <ExternalLink size={16} className="mr-2" />
-                View Live Project
+                Detail
               </a>
             </Button>
             <Button 
               variant="outline"
               className="flex-1"
-              asChild
+              onClick={onClose}
             >
-              <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">
-                <Github size={16} className="mr-2" />
-                View Code
-              </a>
+              Close
             </Button>
           </div>
         </div>
