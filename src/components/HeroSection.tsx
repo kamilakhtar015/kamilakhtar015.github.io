@@ -1,5 +1,5 @@
 import { ChevronDown, Github, Linkedin, Mail } from 'lucide-react';
-import gupisValleyImage from '@/assets/gupis-valley-realistic.jpg';
+import k2MountainImage from '@/assets/k2-mountain-hero.jpg';
 
 export const HeroSection = () => {
   return (
@@ -7,7 +7,7 @@ export const HeroSection = () => {
       id="home" 
       className="relative min-h-screen flex items-center justify-center text-center"
       style={{
-        backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3)), url(${gupisValleyImage})`,
+        backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3)), url(${k2MountainImage})`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundAttachment: 'fixed'
