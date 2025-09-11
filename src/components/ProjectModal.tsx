@@ -59,26 +59,23 @@ export const ProjectModal = ({ project, isOpen, onClose }: ProjectModalProps) =>
           </div>
         </div>
 
-        {/* Action Buttons - Dark Bottom Section */}
+        {/* Action Links - Dark Bottom Section */}
         <div className="bg-slate-900 p-4">
-          <div className="flex gap-3">
-            <Button 
-              size="sm"
-              className="flex-1 bg-white text-slate-900 hover:bg-gray-100 font-medium text-xs uppercase tracking-wide"
-              asChild
+          <div className="flex justify-center gap-8">
+            <a 
+              href={project.liveUrl} 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-white font-medium text-sm uppercase tracking-wide hover:text-gray-300 transition-colors cursor-pointer"
             >
-              <a href={project.liveUrl} target="_blank" rel="noopener noreferrer">
-                DETAILS
-              </a>
-            </Button>
-            <Button 
-              size="sm"
-              variant="outline"
-              className="flex-1 border-white text-white hover:bg-white hover:text-slate-900 font-medium text-xs uppercase tracking-wide"
+              DETAILS
+            </a>
+            <button 
               onClick={onClose}
+              className="text-white font-medium text-sm uppercase tracking-wide hover:text-gray-300 transition-colors cursor-pointer"
             >
               CLOSE
-            </Button>
+            </button>
           </div>
         </div>
       </DialogContent>
