@@ -62,15 +62,7 @@ export const ProjectModal = ({ project, isOpen, onClose }: ProjectModalProps) =>
 
         {/* Action Links - Dark Bottom Section */}
         <div className="bg-slate-900 p-4">
-          <div className="flex justify-center gap-8">
-            <a 
-              href={project.liveUrl} 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="text-white font-medium text-sm uppercase tracking-wide hover:text-gray-300 transition-colors cursor-pointer"
-            >
-              DETAILS
-            </a>
+          <div className="flex justify-center">
             <button 
               onClick={onClose}
               className="text-white font-medium text-sm uppercase tracking-wide hover:text-gray-300 transition-colors cursor-pointer"
