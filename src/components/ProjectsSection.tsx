@@ -6,6 +6,7 @@ import { ProjectModal } from '@/components/ProjectModal';
 import resumeAnalyzerImage from '@/assets/resume-analyzer-dashboard.jpg';
 import machineLearningImage from '@/assets/machine-learning-projects.jpg';
 import rsaTimingAttackImage from '@/assets/rsa-timing-attack.jpg';
+import californiaHousingImage from '@/assets/california-housing-prediction.jpg';
 
 const projects = [
   {
@@ -34,6 +35,15 @@ const projects = [
     githubUrl: 'https://github.com/kamilakhtar015/rsa-timing-attack',
     category: 'Cybersecurity',
     image: rsaTimingAttackImage
+  },
+  {
+    title: 'California Housing Price Prediction',
+    description: 'A machine learning project focused on predicting housing prices using the California Housing dataset. Implemented data preprocessing, exploratory data analysis, and feature engineering, followed by model training and evaluation with regression algorithms to achieve accurate price predictions.',
+    tags: ['Python', 'Scikit-learn', 'Pandas', 'NumPy', 'Matplotlib', 'Regression Models', 'EDA'],
+    liveUrl: 'https://github.com/kamilakhtar015/CaliHousing-PricePred',
+    githubUrl: 'https://github.com/kamilakhtar015/CaliHousing-PricePred',
+    category: 'Data Science',
+    image: californiaHousingImage
   },
   {
     title: 'AI-Powered Task Manager',
