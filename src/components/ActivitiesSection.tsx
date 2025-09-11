@@ -35,7 +35,7 @@ export const ActivitiesSection = () => {
     },
     {
       title: "Program Director",
-      organization: "Computer Science Society, IBA Karachi",
+      organization: "Computer Science Society, Institute of Business Administration Karachi",
       period: "January 2024 - May 2024",
       description: [
         "Organized 2 city-level hackathons among 10 university students.",
