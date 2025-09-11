@@ -21,7 +21,7 @@ const projects = [
     description: 'A comprehensive collection of machine learning implementations including Urban Scene Segmentation using DeeplabV3 model on German CityScape Dataset, PCA Implementation, Naive Bayes Classifier for Buyers attitude analysis, and various CNN architectures for computer vision tasks.',
     tags: ['Python', 'TensorFlow', 'OpenCV', 'DeeplabV3', 'PCA', 'Naive Bayes', 'CNN'],
     liveUrl: 'https://github.com/example',
-    githubUrl: 'https://github.com/example',
+    githubUrl: 'https://github.com/kamilakhtar015/Machine-Learning---Concepts-GSU-',
     category: 'Machine Learning',
     image: machineLearningImage
   },
