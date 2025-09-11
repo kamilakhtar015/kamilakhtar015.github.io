@@ -63,7 +63,7 @@ export const ActivitiesSection = () => {
         <div className="text-center mb-16">
           <h2 className="text-orange-500 text-lg font-semibold mb-4 tracking-wider uppercase">Activities</h2>
           <h1 className="text-3xl md:text-4xl font-bold text-white mb-6">The Road So Far, the Horizons Ahead</h1>
-          <p className="text-gray-300 text-lg">Research, leadership & professional development activities</p>
+          <p className="text-gray-300 text-lg">RESEARCH, LEADERSHIP & PROFESSIONAL DEVELOPMENT ACTIVITIES</p>
         </div>
 
         <div className="max-w-6xl mx-auto">
