@@ -24,34 +24,34 @@ export const ProjectModal = ({ project, isOpen, onClose }: ProjectModalProps) =>
 
   return (
     <Dialog open={isOpen} onOpenChange={onClose}>
-      <DialogContent className="max-w-2xl p-0 overflow-hidden">
+      <DialogContent className="max-w-lg p-0 overflow-hidden">
         {/* Project Image */}
         <div className="relative overflow-hidden">
           <img 
             src={project.image} 
             alt={project.title}
-            className="w-full h-80 object-cover"
+            className="w-full h-64 object-cover"
           />
         </div>
 
         {/* Content Section */}
-        <div className="p-6 space-y-4">
+        <div className="p-4 space-y-3">
           {/* Project Title */}
-          <h2 className="text-2xl font-bold text-foreground">
+          <h2 className="text-lg font-semibold text-foreground">
             {project.title}
           </h2>
 
           {/* Project Description */}
-          <p className="text-muted-foreground leading-relaxed">
+          <p className="text-sm text-muted-foreground leading-relaxed">
             {project.description}
           </p>
 
           {/* Technology Tags */}
-          <div className="flex flex-wrap gap-2 pt-2">
+          <div className="flex flex-wrap gap-2 pt-1">
             {project.tags.map((tag) => (
               <span 
                 key={tag} 
-                className="text-xs font-medium text-muted-foreground uppercase tracking-wider"
+                className="text-xs font-normal text-muted-foreground/70 uppercase tracking-wide"
               >
                 {tag}
               </span>
@@ -60,10 +60,11 @@ export const ProjectModal = ({ project, isOpen, onClose }: ProjectModalProps) =>
         </div>
 
         {/* Action Buttons - Dark Bottom Section */}
-        <div className="bg-slate-900 p-6">
-          <div className="flex gap-4">
+        <div className="bg-slate-900 p-4">
+          <div className="flex gap-3">
             <Button 
-              className="flex-1 bg-white text-slate-900 hover:bg-gray-100 font-medium"
+              size="sm"
+              className="flex-1 bg-white text-slate-900 hover:bg-gray-100 font-medium text-xs uppercase tracking-wide"
               asChild
             >
               <a href={project.liveUrl} target="_blank" rel="noopener noreferrer">
@@ -71,8 +72,9 @@ export const ProjectModal = ({ project, isOpen, onClose }: ProjectModalProps) =>
               </a>
             </Button>
             <Button 
+              size="sm"
               variant="outline"
-              className="flex-1 border-white text-white hover:bg-white hover:text-slate-900 font-medium"
+              className="flex-1 border-white text-white hover:bg-white hover:text-slate-900 font-medium text-xs uppercase tracking-wide"
               onClick={onClose}
             >
               CLOSE
