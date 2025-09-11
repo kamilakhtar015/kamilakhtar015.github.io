@@ -24,62 +24,58 @@ export const ProjectModal = ({ project, isOpen, onClose }: ProjectModalProps) =>
 
   return (
     <Dialog open={isOpen} onOpenChange={onClose}>
-      <DialogContent className="max-w-2xl">
-        <DialogHeader>
-          <DialogTitle className="text-2xl font-bold text-foreground">
+      <DialogContent className="max-w-2xl p-0 overflow-hidden">
+        {/* Project Image */}
+        <div className="relative overflow-hidden">
+          <img 
+            src={project.image} 
+            alt={project.title}
+            className="w-full h-80 object-cover"
+          />
+        </div>
+
+        {/* Content Section */}
+        <div className="p-6 space-y-4">
+          {/* Project Title */}
+          <h2 className="text-2xl font-bold text-foreground">
             {project.title}
-          </DialogTitle>
-        </DialogHeader>
-        
-        <div className="space-y-6">
-          {/* Project Image */}
-          <div className="relative overflow-hidden rounded-lg">
-            <img 
-              src={project.image} 
-              alt={project.title}
-              className="w-full h-80 object-cover"
-            />
-          </div>
+          </h2>
 
           {/* Project Description */}
-          <div>
-            <p className="text-muted-foreground leading-relaxed">
-              {project.description}
-            </p>
-          </div>
+          <p className="text-muted-foreground leading-relaxed">
+            {project.description}
+          </p>
 
           {/* Technology Tags */}
-          <div>
-            <h4 className="text-sm font-semibold text-foreground mb-3">Technologies Used</h4>
-            <div className="flex flex-wrap gap-2">
-              {project.tags.map((tag) => (
-                <Badge 
-                  key={tag} 
-                  variant="secondary"
-                  className="text-xs font-medium"
-                >
-                  {tag}
-                </Badge>
-              ))}
-            </div>
+          <div className="flex flex-wrap gap-2 pt-2">
+            {project.tags.map((tag) => (
+              <span 
+                key={tag} 
+                className="text-xs font-medium text-muted-foreground uppercase tracking-wider"
+              >
+                {tag}
+              </span>
+            ))}
           </div>
+        </div>
 
-          {/* Action Buttons */}
-          <div className="flex gap-4 pt-4">
+        {/* Action Buttons - Dark Bottom Section */}
+        <div className="bg-slate-900 p-6">
+          <div className="flex gap-4">
             <Button 
-              className="flex-1"
+              className="flex-1 bg-white text-slate-900 hover:bg-gray-100 font-medium"
               asChild
             >
               <a href={project.liveUrl} target="_blank" rel="noopener noreferrer">
-                Detail
+                DETAILS
               </a>
             </Button>
             <Button 
               variant="outline"
-              className="flex-1"
+              className="flex-1 border-white text-white hover:bg-white hover:text-slate-900 font-medium"
               onClick={onClose}
             >
-              Close
+              CLOSE
             </Button>
           </div>
         </div>
