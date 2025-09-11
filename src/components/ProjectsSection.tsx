@@ -4,8 +4,8 @@ import { Badge } from '@/components/ui/badge';
 
 const projects = [
   {
-    title: 'Resume Analyzer - Format Friend AI',
-    description: 'An AI-powered tool that helps format and structure documents intelligently, saving time and ensuring consistency. Advanced ATS checking of resumes with AI agent backend for optimal job application success.',
+    title: 'Resume Analyzer',
+    description: 'Advanced ATS checking system that analyzes resumes for optimal job application success. This AI-powered tool helps format and structure documents intelligently, ensuring consistency and saving valuable time in the job search process.',
     tags: ['AI', 'Document Processing', 'ATS Optimization', 'Machine Learning'],
     liveUrl: 'https://crestviewaiautomations.com/',
     githubUrl: 'https://github.com/example',
