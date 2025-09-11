@@ -68,21 +68,11 @@ export const ProjectsSection = () => {
           {projects.map((project, index) => (
             <div 
               key={index}
-              className="bg-card rounded-lg shadow-card hover:shadow-elegant transition-smooth overflow-hidden group relative border border-border/40"
+              className="bg-card rounded-lg shadow-card hover:shadow-elegant transition-smooth overflow-hidden group border border-border/40"
             >
-              {/* Category Badge */}
-              <div className="absolute top-4 right-4 z-10">
-                <Badge 
-                  variant="outline"
-                  className="bg-background/90 backdrop-blur-sm text-xs font-medium border-accent/20"
-                >
-                  {project.category}
-                </Badge>
-              </div>
-
               <div className="p-6 h-full flex flex-col">
                 <div className="flex-1">
-                  <h3 className="text-xl font-semibold text-card-foreground mb-3 group-hover:text-accent transition-smooth pr-20">
+                  <h3 className="text-xl font-semibold text-card-foreground mb-3 group-hover:text-accent transition-smooth">
                     {project.title}
                   </h3>
                   <p className="text-muted-foreground mb-4 leading-relaxed text-sm">
