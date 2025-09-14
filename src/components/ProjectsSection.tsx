@@ -90,7 +90,8 @@ const projects = [
 		liveUrl: 'https://github.com/kamilakhtar015/personal-website',
 		githubUrl: 'https://github.com/kamilakhtar015/personal-website',
 		category: 'Web Development',
-	image: personalWebsiteImage,
+		image: personalWebsiteImage,
+		hideDetails: true,
 	},
 	{
 		title: 'Graduate Career Outcomes Analysis',
@@ -126,7 +127,8 @@ const projects = [
 		liveUrl: 'https://github.com/example',
 		githubUrl: 'https://github.com/example',
 		category: 'AI Research',
-	image: privacyPreservingImage,
+		image: privacyPreservingImage,
+		hideDetails: true,
 	},
 ];
 

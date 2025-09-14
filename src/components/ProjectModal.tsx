@@ -68,7 +68,7 @@ export const ProjectModal = ({ project, isOpen, onClose }: ProjectModalProps) =>
         {/* Action Links - Dark Bottom Section */}
         <div className="bg-slate-900 p-4">
           <div className="flex justify-center gap-8">
-            {project.title !== 'Personal Portfolio Website' && project.title !== 'Privacy Preserving Image Harmonization using GANs' && (
+            {!project.hideDetails && (
               <a
                 href={project.githubUrl}
                 target="_blank"

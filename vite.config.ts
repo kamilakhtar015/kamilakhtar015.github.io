@@ -18,6 +18,6 @@ export default defineConfig(({ mode }) => ({
       "@": path.resolve(__dirname, "./src"),
     },
   },
-  // 👇 This is needed for GitHub Pages deployment
+  // 👇 Corrected for root GitHub Pages deployment
   base: "/",
 }));

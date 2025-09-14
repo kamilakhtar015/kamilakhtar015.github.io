@@ -1,4 +1,5 @@
 import React from 'react';
+import kamilProfile from '@/assets/kamil-profile.jpg';
 
 export const AboutSection = () => {
   const skills = [
@@ -22,7 +23,7 @@ export const AboutSection = () => {
           <div className="md:col-span-4 flex justify-center md:justify-start items-start px-2 sm:px-0">
             <div className="w-56 h-56 sm:w-64 sm:h-64 rounded-full bg-gradient-to-br from-accent/30 to-primary/30 flex items-center justify-center border-4 border-orange-500/30 overflow-hidden">
               <img
-                src="\src\assets\kamil-profile.jpg"
+                src={kamilProfile}
                 alt="Kamil Akhtar"
                 className="w-52 h-52 sm:w-60 sm:h-60 rounded-full object-cover object-center"
               />

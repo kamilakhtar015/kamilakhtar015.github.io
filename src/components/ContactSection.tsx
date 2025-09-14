@@ -4,7 +4,7 @@ export const ContactSection = () => {
   return (
     <section 
       id="contact" 
-      className="py-20 text-white relative overflow-hidden bg-[#232a32]"
+      className="py-20 text-white relative overflow-hidden contact-bg"
     >
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         {/* Heading */}
@@ -79,6 +79,17 @@ export const ContactSection = () => {
           </div>
         </div>
 
+        {/* Download Resume Button */}
+        <div className="text-center mt-8">
+          <button
+            title="Download Resume"
+            // The filename here now correctly matches your file in the /public folder
+            onClick={() => window.open('/kamil-resume.pdf', '_blank')}
+            className="bg-cyan-500 hover:bg-cyan-600 text-white font-semibold px-8 py-3 rounded transition-colors"
+          >
+            Download Resume
+          </button>
+        </div>
 
         {/* Back to Top Button */}
         <div className="flex justify-center mt-16">
