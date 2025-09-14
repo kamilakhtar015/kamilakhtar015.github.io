@@ -4,22 +4,20 @@ export const ContactSection = () => {
   return (
     <section 
       id="contact" 
-      className="py-20 text-white relative overflow-hidden"
-      style={{
-        background: `
-          radial-gradient(ellipse 80% 50% at 20% -20%, hsl(210 20% 25%) 0%, transparent 50%),
-          radial-gradient(ellipse 80% 50% at 80% 120%, hsl(210 20% 20%) 0%, transparent 50%),
-          radial-gradient(ellipse 60% 40% at 40% 40%, hsl(210 20% 18%) 0%, transparent 50%),
-          linear-gradient(135deg, hsl(210 20% 12%) 0%, hsl(210 20% 15%) 100%)
-        `
-      }}
+      className="py-20 text-white relative overflow-hidden bg-[#232a32]"
     >
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+        {/* Heading */}
         <div className="text-center mb-16">
-          <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">I'd Love To Connect With You.</h1>
-          <p className="text-gray-300 text-lg">Let me get to know more about you.</p>
+          <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
+            I'd Love To Connect With You.
+          </h1>
+          <p className="text-gray-300 text-lg">
+            Let me get to know more about you.
+          </p>
         </div>
 
+        {/* Contact Info */}
         <div className="grid md:grid-cols-3 gap-12 max-w-4xl mx-auto">
           {/* Where To Find Me */}
           <div className="text-center">
@@ -28,7 +26,9 @@ export const ContactSection = () => {
                 <MapPin size={32} className="text-orange-500" />
               </div>
             </div>
-            <h3 className="text-orange-500 text-lg font-bold mb-4">Where To Find Me</h3>
+            <h3 className="text-orange-500 text-lg font-bold mb-4">
+              Where To Find Me
+            </h3>
             <p className="text-gray-300 leading-relaxed">
               Georgia State University<br />
               Atlanta, GA<br />
@@ -43,9 +43,14 @@ export const ContactSection = () => {
                 <Mail size={32} className="text-orange-500" />
               </div>
             </div>
-            <h3 className="text-orange-500 text-lg font-bold mb-4">Email Me At</h3>
+            <h3 className="text-orange-500 text-lg font-bold mb-4">
+              Email Me At
+            </h3>
             <p className="text-gray-300 leading-relaxed">
-              <a href="mailto:kamil.akhtar015@gmail.com" className="hover:text-cyan-400 transition-colors">
+              <a 
+                href="mailto:kamil.akhtar015@gmail.com" 
+                className="hover:text-cyan-400 transition-colors"
+              >
                 kamil.akhtar015@gmail.com
               </a>
             </p>
@@ -58,18 +63,27 @@ export const ContactSection = () => {
                 <Linkedin size={32} className="text-orange-500" />
               </div>
             </div>
-            <h3 className="text-orange-500 text-lg font-bold mb-4">Let's Connect</h3>
+            <h3 className="text-orange-500 text-lg font-bold mb-4">
+              Let's Connect
+            </h3>
             <p className="text-gray-300 leading-relaxed">
-              <a href="https://www.linkedin.com/in/kamil-akhtar/" target="_blank" rel="noopener noreferrer" className="hover:text-cyan-400 transition-colors">
+              <a 
+                href="https://www.linkedin.com/in/kamil-akhtar/" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="hover:text-cyan-400 transition-colors"
+              >
                 LinkedIn Profile
               </a>
             </p>
           </div>
         </div>
 
-        {/* Back to top button */}
+
+        {/* Back to Top Button */}
         <div className="flex justify-center mt-16">
           <button 
+            title="Back to Top"
             onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
             className="w-12 h-12 bg-gray-600 hover:bg-gray-500 rounded-full flex items-center justify-center transition-colors"
           >

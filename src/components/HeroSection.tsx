@@ -13,23 +13,23 @@ export const HeroSection = () => {
         backgroundAttachment: 'fixed'
       }}
     >
-      <div className="container mx-auto px-4 z-10">
+  <div className="container mx-auto px-4 sm:px-6 lg:px-8 z-10">
         {/* K2 Peak info */}
         <div className="absolute top-8 right-8 text-white/80 text-sm font-light tracking-wider text-right">
           <div className="font-medium">K2 Peak</div>
           <div className="text-xs text-white/60">Karakoram Range, Gilgit-Baltistan</div>
         </div>
         
-        <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 tracking-tight">
+  <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold text-white mb-6 sm:mb-8 tracking-tight">
           Kamil Akhtar
         </h1>
         
-        <p className="text-xl md:text-2xl text-white/90 mb-6 font-light">
+  <p className="text-lg sm:text-xl md:text-2xl text-white/90 mb-6 font-light">
           Machine Learning Engineer | Researcher | Data Analyst
         </p>
         
         {/* English Translation */}
-        <div className="mb-6 max-w-4xl mx-auto">
+  <div className="mb-4 sm:mb-6 max-w-4xl mx-auto px-2 sm:px-0">
           <div className="italic text-white/80 text-base md:text-lg leading-relaxed text-center">
             "Elevate your selfhood to such heights that, before every destiny is written,<br />
             God Himself will ask you: Tell me, what is it that you desire?"
@@ -38,7 +38,7 @@ export const HeroSection = () => {
         
         
         
-        <div className="flex justify-center space-x-6 mb-16">
+  <div className="flex justify-center space-x-4 sm:space-x-6 mb-10 sm:mb-16">
           <a 
             href="https://github.com/kamilakhtar015" 
             target="_blank" 

@@ -11,6 +11,7 @@ interface Project {
   githubUrl: string;
   category: string;
   image: string;
+  hideDetails?: boolean; // Added optional hideDetails property
 }
 
 interface ProjectModalProps {
@@ -41,11 +42,15 @@ export const ProjectModal = ({ project, isOpen, onClose }: ProjectModalProps) =>
             {project.title}
           </h2>
 
-          {/* Project Description */}
+          {/* Project Description with line breaks */}
           <p className="text-sm text-muted-foreground leading-relaxed">
-            {project.description}
+            {project.description.split('\n').map((line, idx) => (
+              <span key={idx}>
+                {line}
+                {idx !== project.description.split('\n').length - 1 && <br />}
+              </span>
+            ))}
           </p>
-
 
           {/* Technology Tags */}
           <div className="flex flex-wrap gap-2 pt-1">
@@ -62,13 +67,24 @@ export const ProjectModal = ({ project, isOpen, onClose }: ProjectModalProps) =>
 
         {/* Action Links - Dark Bottom Section */}
         <div className="bg-slate-900 p-4">
-          <div className="flex justify-center">
-            <button 
+          <div className="flex justify-center gap-8">
+            {project.title !== 'Personal Portfolio Website' && project.title !== 'Privacy Preserving Image Harmonization using GANs' && (
+              <a
+                href={project.githubUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-white font-medium text-sm uppercase tracking-wide hover:text-blue-400 transition-colors cursor-pointer"
+                title={`View ${project.title} on GitHub`}
+              >
+                DETAILS
+              </a>
+            )}
+            <span
               onClick={onClose}
               className="text-white font-medium text-sm uppercase tracking-wide hover:text-gray-300 transition-colors cursor-pointer"
             >
               CLOSE
-            </button>
+            </span>
           </div>
         </div>
       </DialogContent>

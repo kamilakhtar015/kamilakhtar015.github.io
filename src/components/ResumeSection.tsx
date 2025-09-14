@@ -67,7 +67,7 @@ export const ResumeSection = () => {
         <div className="absolute bottom-20 right-10 w-24 h-24 rounded-full bg-primary animate-pulse delay-1000"></div>
       </div>
       
-      <div className="container mx-auto px-4 relative z-10">
+  <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-4xl font-bold text-foreground mb-4 relative">
             Resume
@@ -103,9 +103,9 @@ export const ResumeSection = () => {
                       <div className="w-2 h-2 bg-background rounded-full"></div>
                     </div>
                     <div className="bg-card p-8 rounded-xl shadow-card hover:shadow-elegant transition-all duration-300 border border-accent/10 group-hover:border-accent/30 group-hover:-translate-y-1">
-                      <div className="flex items-start justify-between mb-4">
+                      <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-4 gap-2">
                         <h5 className="text-xl font-bold text-card-foreground group-hover:text-accent transition-colors duration-300">{exp.role}</h5>
-                        <span className="text-sm text-muted-foreground bg-accent/10 px-3 py-1 rounded-full font-medium">{exp.period}</span>
+                        <span className="text-sm text-muted-foreground bg-accent/10 px-3 py-1 rounded-full font-medium sm:ml-4 sm:self-end text-left sm:text-right">{exp.period}</span>
                       </div>
                       <div className="mb-4">
                         <span className="text-accent font-semibold text-lg">{exp.company}</span>
@@ -178,9 +178,9 @@ export const ResumeSection = () => {
                   <div className="w-2 h-2 bg-background rounded-full"></div>
                 </div>
                 <div className="bg-card p-8 rounded-xl shadow-card hover:shadow-elegant transition-all duration-300 border border-gradient-to-r border-primary/10 group-hover:border-accent/30 group-hover:-translate-y-1">
-                  <div className="flex items-start justify-between mb-4">
+                  <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-4 gap-2">
                     <h4 className="text-2xl font-bold text-card-foreground group-hover:text-primary transition-colors duration-300">{edu.degree}</h4>
-                    <span className="text-sm text-muted-foreground bg-gradient-to-r from-primary/10 to-accent/10 px-4 py-2 rounded-full font-medium">{edu.period}</span>
+                    <span className="text-sm text-muted-foreground bg-gradient-to-r from-primary/10 to-accent/10 px-4 py-2 rounded-full font-medium sm:ml-4 sm:self-end text-left sm:text-right">{edu.period}</span>
                   </div>
                   <div className="mb-4">
                     <span className="text-accent font-semibold text-xl">{edu.institution}</span>

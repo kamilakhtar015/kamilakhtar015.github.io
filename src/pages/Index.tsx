@@ -2,9 +2,9 @@ import { Navigation } from '@/components/Navigation';
 import { HeroSection } from '@/components/HeroSection';
 import { AboutSection } from '@/components/AboutSection';
 import { ResumeSection } from '@/components/ResumeSection';
-import { ProjectsSection } from '@/components/ProjectsSection';
+import ProjectsSection from '@/components/ProjectsSection';
 import { ActivitiesSection } from '@/components/ActivitiesSection';
-import { StatisticsSection } from '@/components/StatisticsSection';
+import StatisticsSection from '@/components/StatisticsSection';
 import { ContactSection } from '@/components/ContactSection';
 
 
